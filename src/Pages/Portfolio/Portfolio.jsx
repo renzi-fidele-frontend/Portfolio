@@ -1,12 +1,11 @@
 import { useEffect } from "react";
 import styles from "./Portfolio.module.css";
 import estiloMain from "../MainPage/MainPage.module.css";
-import { portfolio } from "../MainPage/data";
+import { portfolioReact } from "../MainPage/data";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import ProjectModal from "../../Components/ProjectModal/ProjectModal";
 import HeaderMobile from "../../Components/HeaderMobile/HeaderMobile";
 import { useNavigate } from "react-router-dom";
-import useSubir from "../../Hooks/useSubir";
 
 const Portfolio = () => {
    const navegar = useNavigate();
@@ -29,7 +28,7 @@ const Portfolio = () => {
          </h2>
 
          <div>
-            {portfolio.map((v, k) => (
+            {portfolioReact.map((v, k) => (
                <ProjectCard
                   titulo={v.titulo}
                   urlProjeto={v.url}

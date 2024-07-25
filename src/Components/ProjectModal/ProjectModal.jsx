@@ -56,7 +56,7 @@ const ProjectModal = () => {
                      </div>
                      {/*Plataforma */}
                      <div>
-                        <h6>Plataforma:</h6>
+                        <h6>Hospedagem:</h6>
                         <p>{loc.state.plataforma}</p>
                      </div>
                      {/*Repositório */}

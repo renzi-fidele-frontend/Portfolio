@@ -24,11 +24,12 @@ import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 
-import { portfolio, servicos, testemunhos } from "./data";
+import { portfolioInstitucional, portfolioLandingPage, portfolioReact, servicos, testemunhos } from "./data";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import TestemunhoCard from "../../Components/TestemunhoCard/TestemunhoCard";
 import ServicoCard from "../../Components/ServicoCard/ServicoCard";
 import HeaderMobile from "../../Components/HeaderMobile/HeaderMobile";
+import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 
 const MainPage = () => {
    const skillsRef = useRef();
@@ -221,11 +222,13 @@ const MainPage = () => {
                            <span>2022 - Até o momento</span>
                            <h5>Web Freelancer - UpWork</h5>
                            <p>
-                           Minha experiência no Upwork foi marcada por colaborações internacionais que enriqueceram minha perspectiva profissional. Trabalhei com clientes de diferentes partes do mundo, oferecendo soluções criativas e técnicas em frontend, design gráfico, edição de vídeo e marketing digital. A diversidade de projetos e a demanda por alta qualidade me impulsionaram a melhorar continuamente e a entregar trabalhos que fazem a diferença.
+                              Minha experiência no Upwork foi marcada por colaborações internacionais que enriqueceram minha perspectiva
+                              profissional. Trabalhei com clientes de diferentes partes do mundo, oferecendo soluções criativas e técnicas em
+                              frontend, design gráfico, edição de vídeo e marketing digital. A diversidade de projetos e a demanda por alta
+                              qualidade me impulsionaram a melhorar continuamente e a entregar trabalhos que fazem a diferença.
                            </p>
                         </div>
                      </div>
-                     
                   </div>
                </div>
             </div>
@@ -358,41 +361,18 @@ const MainPage = () => {
             <h2 className={styles.titulo2}>
                <span>Meu Portifólio</span>
             </h2>
-            <div id={styles.grelha}>
-               {portfolio.map(
-                  (v, k) =>
-                     k < 6 && (
-                        <ProjectCard
-                           titulo={v.titulo}
-                           urlProjeto={v.url}
-                           plataforma={v.plataforma}
-                           linguagens={v.linguagens}
-                           tipo={v.tipo}
-                           repositorio={v.repositorio}
-                           imagemDestaque={v.imagemDestaque}
-                           videoDestaque={v.videoDestaque}
-                           imagemThumbnail={v.imagemThumbnail}
-                           key={k}
-                           thumbnailCentralizado={v.fotoCentralizada}
-                        />
-                     )
-               )}
-            </div>
-
-            <div className={styles.swiperMobileCt}>
-               <Swiper
-                  modules={[Pagination]}
-                  className={styles.swipperContainer}
-                  speed={500}
-                  spaceBetween={20}
-                  pagination={{ type: "bullets", el: `.${styles.pag}`, clickable: true }}
-                  slidesPerView={"auto"}
-                  breakpoints={{ 950: { slidesPerView: 2 }, 1550: { slidesPerView: 3 } }}
-               >
-                  {portfolio.map(
-                     (v, k) =>
-                        k < 6 && (
-                           <SwiperSlide key={k}>
+            <Tabs>
+               <TabList>
+                  <Tab>Landing Page</Tab>
+                  <Tab>Institucional</Tab>
+                  <Tab>ReactJs</Tab>
+               </TabList>
+               <TabPanel>
+                  {/*  Desktop  */}
+                  <div id={styles.grelha}>
+                     {portfolioLandingPage.map(
+                        (v, k) =>
+                           k < 6 && (
                               <ProjectCard
                                  titulo={v.titulo}
                                  urlProjeto={v.url}
@@ -403,18 +383,165 @@ const MainPage = () => {
                                  imagemDestaque={v.imagemDestaque}
                                  videoDestaque={v.videoDestaque}
                                  imagemThumbnail={v.imagemThumbnail}
+                                 key={k}
                                  thumbnailCentralizado={v.fotoCentralizada}
                               />
-                           </SwiperSlide>
-                        )
-                  )}
+                           )
+                     )}
+                  </div>
+                  {/*  Mobile  */}
+                  <div className={styles.swiperMobileCt}>
+                     <Swiper
+                        modules={[Pagination]}
+                        className={styles.swipperContainer}
+                        speed={500}
+                        spaceBetween={20}
+                        pagination={{ type: "bullets", el: `.${styles.pag}`, clickable: true }}
+                        slidesPerView={"auto"}
+                        breakpoints={{ 950: { slidesPerView: 2 }, 1550: { slidesPerView: 3 } }}
+                     >
+                        {portfolioLandingPage.map(
+                           (v, k) =>
+                              k < 6 && (
+                                 <SwiperSlide key={k}>
+                                    <ProjectCard
+                                       titulo={v.titulo}
+                                       urlProjeto={v.url}
+                                       plataforma={v.plataforma}
+                                       linguagens={v.linguagens}
+                                       tipo={v.tipo}
+                                       repositorio={v.repositorio}
+                                       imagemDestaque={v.imagemDestaque}
+                                       videoDestaque={v.videoDestaque}
+                                       imagemThumbnail={v.imagemThumbnail}
+                                       thumbnailCentralizado={v.fotoCentralizada}
+                                    />
+                                 </SwiperSlide>
+                              )
+                        )}
 
-                  <div className={styles.pag}></div>
-               </Swiper>
-            </div>
+                        <div className={styles.pag}></div>
+                     </Swiper>
+                  </div>
+               </TabPanel>
+               <TabPanel>
+                  {/*  Desktop  */}
+                  <div id={styles.grelha}>
+                     {portfolioInstitucional.map(
+                        (v, k) =>
+                           k < 6 && (
+                              <ProjectCard
+                                 titulo={v.titulo}
+                                 urlProjeto={v.url}
+                                 plataforma={v.plataforma}
+                                 linguagens={v.linguagens}
+                                 tipo={v.tipo}
+                                 repositorio={v.repositorio}
+                                 imagemDestaque={v.imagemDestaque}
+                                 videoDestaque={v.videoDestaque}
+                                 imagemThumbnail={v.imagemThumbnail}
+                                 key={k}
+                                 thumbnailCentralizado={v.fotoCentralizada}
+                              />
+                           )
+                     )}
+                  </div>
+                  {/*  Mobile  */}
+                  <div className={styles.swiperMobileCt}>
+                     <Swiper
+                        modules={[Pagination]}
+                        className={styles.swipperContainer}
+                        speed={500}
+                        spaceBetween={20}
+                        pagination={{ type: "bullets", el: `.${styles.pag}`, clickable: true }}
+                        slidesPerView={"auto"}
+                        breakpoints={{ 950: { slidesPerView: 2 }, 1550: { slidesPerView: 3 } }}
+                     >
+                        {portfolioInstitucional.map(
+                           (v, k) =>
+                              k < 6 && (
+                                 <SwiperSlide key={k}>
+                                    <ProjectCard
+                                       titulo={v.titulo}
+                                       urlProjeto={v.url}
+                                       plataforma={v.plataforma}
+                                       linguagens={v.linguagens}
+                                       tipo={v.tipo}
+                                       repositorio={v.repositorio}
+                                       imagemDestaque={v.imagemDestaque}
+                                       videoDestaque={v.videoDestaque}
+                                       imagemThumbnail={v.imagemThumbnail}
+                                       thumbnailCentralizado={v.fotoCentralizada}
+                                    />
+                                 </SwiperSlide>
+                              )
+                        )}
+
+                        <div className={styles.pag}></div>
+                     </Swiper>
+                  </div>
+               </TabPanel>
+               <TabPanel>
+                  {/*  Desktop  */}
+                  <div id={styles.grelha}>
+                     {portfolioReact.map(
+                        (v, k) =>
+                           k < 6 && (
+                              <ProjectCard
+                                 titulo={v.titulo}
+                                 urlProjeto={v.url}
+                                 plataforma={v.plataforma}
+                                 linguagens={v.linguagens}
+                                 tipo={v.tipo}
+                                 repositorio={v.repositorio}
+                                 imagemDestaque={v.imagemDestaque}
+                                 videoDestaque={v.videoDestaque}
+                                 imagemThumbnail={v.imagemThumbnail}
+                                 key={k}
+                                 thumbnailCentralizado={v.fotoCentralizada}
+                              />
+                           )
+                     )}
+                  </div>
+                  {/*  Mobile  */}
+                  <div className={styles.swiperMobileCt}>
+                     <Swiper
+                        modules={[Pagination]}
+                        className={styles.swipperContainer}
+                        speed={500}
+                        spaceBetween={20}
+                        pagination={{ type: "bullets", el: `.${styles.pag}`, clickable: true }}
+                        slidesPerView={"auto"}
+                        breakpoints={{ 950: { slidesPerView: 2 }, 1550: { slidesPerView: 3 } }}
+                     >
+                        {portfolioReact.map(
+                           (v, k) =>
+                              k < 6 && (
+                                 <SwiperSlide key={k}>
+                                    <ProjectCard
+                                       titulo={v.titulo}
+                                       urlProjeto={v.url}
+                                       plataforma={v.plataforma}
+                                       linguagens={v.linguagens}
+                                       tipo={v.tipo}
+                                       repositorio={v.repositorio}
+                                       imagemDestaque={v.imagemDestaque}
+                                       videoDestaque={v.videoDestaque}
+                                       imagemThumbnail={v.imagemThumbnail}
+                                       thumbnailCentralizado={v.fotoCentralizada}
+                                    />
+                                 </SwiperSlide>
+                              )
+                        )}
+
+                        <div className={styles.pag}></div>
+                     </Swiper>
+                  </div>
+               </TabPanel>
+            </Tabs>
 
             <section style={{ display: "none" }} id={styles.portfolioBtnCt}>
-               <Link to={"/portfolio"} className={styles.botao}>
+               <Link to={"/portfolioReact"} className={styles.botao}>
                   <FaPlus /> <span>Ver mais</span>
                </Link>
             </section>

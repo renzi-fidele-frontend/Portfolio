@@ -358,7 +358,7 @@
    padding: var(--padding-secao);
 }
 
-#portifolio > #grelha {
+#portifolio #grelha {
    display: grid;
    grid-template-columns: 32% 32% 32%;
 }
@@ -708,7 +708,7 @@
    }
 
    #servicos > #grelha,
-   #portifolio > #grelha {
+   #portifolio #grelha {
       grid-template-columns: 33% 33% 33%;
    }
 }
@@ -790,7 +790,7 @@
       font-size: 28px;
    }
    #servicos > #grelha,
-   #portifolio > #grelha {
+   #portifolio #grelha {
       grid-template-columns: 50% 50%;
    }
 }
@@ -831,7 +831,7 @@
    }
 
    #servicos > #grelha,
-   #portifolio > #grelha {
+   #portifolio #grelha {
       grid-template-columns: 100%;
    }
 }
@@ -929,7 +929,7 @@
       display: none;
    }
 
-   #portifolio > #grelha {
+   #portifolio #grelha {
       display: none;
    }
 

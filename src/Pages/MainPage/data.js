@@ -1,29 +1,45 @@
 import { jsx as _jsx } from "react/jsx-runtime";
 
 //  Demo dos projetos
+// React -----------------------
 import video1 from "../../Videos/MusifyPro.mp4";
 import video2 from "../../Videos/NossoBlog.mp4";
 import video3 from "../../Videos/BelezaShop.mp4";
 import video4 from "../../Videos/Custos.mp4";
 import video5 from "../../Videos/Criptoverso.mp4";
-import demo6 from "../../Images/amcDestaque.jpg";
-import demo4 from "../../Images/LugaresAppDestaque.jpg";
+import demo4 from "../../Images/React/LugaresAppDestaque.jpg";
+// Landing Page----------------------
+import demo6 from "../../Images/Institucional/amcDestaque.jpg";
+import destaqueInst1 from "../../Images/Institucional/DestaqueBebida.jpg";
+import destaqueInst3 from "../../Images/Institucional/DestaqueUnik.jpg";
+import destaqueInst4 from "../../Images/Institucional/DestaqueCorretora.jpg";
+import destaqueInst5 from "../../Images/Institucional/DestaqueTransfer.jpg";
+import destaqueInst6 from "../../Images/Institucional/DestaqueKgn.jpg";
+// Site institucional----------------------
 
 //  Thumbnails dos projetos
-import thumb1 from "../../Images/musifyPro.jpg";
-import thumb2 from "../../Images/nossoBlog.jpg";
-import thumb3 from "../../Images/BelezeShop.jpg";
-import thumb4 from "../../Images/Criptoverso.jpg";
-import thumb5 from "../../Images/LugaresApp.jpg";
-import thumb6 from "../../Images/amc.jpg";
-import thumb7 from "../../Images/Custos.jpg";
-import thumb8 from "../../Images/amc.jpg";
+// React ----------------------
+import thumb1 from "../../Images/React/musifyPro.jpg";
+import thumb2 from "../../Images/React/nossoBlog.jpg";
+import thumb3 from "../../Images/React/BelezeShop.jpg";
+import thumb4 from "../../Images/React/Criptoverso.jpg";
+import thumb5 from "../../Images/React/LugaresApp.jpg";
+import thumb6 from "../../Images/Institucional/amc.jpg";
+// Landing Page----------------------
+
+// Institucional----------------------
+import ist1 from "../../Images/Institucional/amc.jpg";
+import ist2 from "../../Images/Institucional/bebida.jpg";
+import ist3 from "../../Images/Institucional/unik.jpg";
+import ist4 from "../../Images/Institucional/corretora.jpg";
+import ist5 from "../../Images/Institucional/dmTurismo.jpg";
+import ist6 from "../../Images/Institucional/kgn.jpg";
 
 // Fotos dos clientes que testemunharam
-import avatar1 from "../../Images/avatar1.gif";
-import avatar2 from "../../Images/avatar2.gif";
-import avatar3 from "../../Images/avatar3.png";
-import avatar4 from "../../Images/avatar4.gif";
+import avatar1 from "../../Images/Testemunhos/avatar1.gif";
+import avatar2 from "../../Images/Testemunhos/avatar2.gif";
+import avatar3 from "../../Images/Testemunhos/avatar3.png";
+import avatar4 from "../../Images/Testemunhos/avatar4.gif";
 
 // Icones dos cards de serviço
 import { CgWebsite } from "react-icons/cg";
@@ -96,7 +112,7 @@ export const servicos = [
    },
 ];
 
-export const portfolio = [
+export const portfolioReact = [
    {
       titulo: "Musify Pro: Leitor de prévias do Spotify",
       url: "https://musify-pro.vercel.app/",
@@ -184,6 +200,77 @@ export const portfolio = [
       repositorio: "https://github.com/renzi-fidele-frontend/custos",
       videoDestaque: video4,
       imagemThumbnail: thumb4,
+      fotoCentralizada: true,
+   },
+];
+
+export const portfolioLandingPage = [];
+
+export const portfolioInstitucional = [
+   {
+      titulo: "Site da Bebida Solidária",
+      url: "https://bebidasolidaria.com.br/",
+      plataforma: "Hostgator",
+      linguagens: ["Wordpress, Elementor"],
+      tipo: "Website",
+      repositorio: "https://bebidasolidaria.com.br/",
+      imagemDestaque: destaqueInst1,
+      imagemThumbnail: ist2,
+      fotoCentralizada: true,
+   },
+   {
+      titulo: "Site da AMC Contruções",
+      url: "https://www.amc.eng.br/",
+      plataforma: "Locaweb",
+      linguagens: ["Html, Css, JavaScript, JQuery"],
+      tipo: "Site institucional",
+      repositorio: "https://www.amc.eng.br/",
+      imagemDestaque: demo6,
+      imagemThumbnail: ist1,
+      fotoCentralizada: true,
+   },
+   {
+      titulo: "Site da Unik Benefícios",
+      url: "https://unikbeneficios.org/",
+      plataforma: "Hostgator",
+      linguagens: ["Wordpress, Elementor"],
+      tipo: "Site OnePage",
+      repositorio: "https://github.com/renzi-fidele-frontend/Music-player-app",
+      imagemDestaque: destaqueInst3,
+      imagemThumbnail: ist3,
+      fotoCentralizada: true,
+   },
+   {
+      titulo: "Site da Online Corretora de Seguros",
+      url: "https://onlinecorretoradeseguros.com.br/",
+      plataforma: "Hostgator",
+      linguagens: ["Wordpress, Elementor"],
+      tipo: "Site institucional",
+      repositorio: "https://github.com/renzi-fidele-frontend/Music-player-app",
+      imagemDestaque: destaqueInst4,
+      imagemThumbnail: ist4,
+      fotoCentralizada: true,
+   },
+   {
+      titulo: "Site da Transfer: DM Turismo",
+      url: "https://dmturismoba.com/translado/",
+      plataforma: "Hostgator",
+      linguagens: ["Wordpress, Elementor"],
+      tipo: "Site institucional",
+      repositorio: "https://dmturismoba.com/translado/",
+      imagemDestaque: destaqueInst5,
+      imagemThumbnail: ist5,
+      fotoCentralizada: true,
+   },
+   {
+      titulo: "Site da Kgn Contruções",
+      url: "https://kgn.com.br/",
+      plataforma: "Hostgator",
+      linguagens: ["Wordpress, Elementor"],
+      tipo: "Site institucional",
+      repositorio: "https://kgn.com.br/",
+      imagemDestaque: destaqueInst6,
+      imagemThumbnail: ist6,
       fotoCentralizada: true,
    },
 ];
