@@ -250,7 +250,7 @@
 
 #sobre #right .duasCol {
    display: grid;
-   grid-template-columns: 58% auto;
+   grid-template-columns: 100%;
    margin-bottom: 2.9%;
 }
 

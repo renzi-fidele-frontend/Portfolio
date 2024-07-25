@@ -1,6 +1,6 @@
 :root {
    --var-cor-texto: #393a3a;
-   --var-cor-decoracao: #c2e7ff;
+   --var-cor-decoracao: #c7def7;
    --var-cor-cinza: #f3f6fc;
    --bs-heading-color: black;
    --cor-fundo0: white;
@@ -17,7 +17,7 @@
 }
 
 .ReactModal__Overlay {
-    z-index: 800 !important;
+   z-index: 800 !important;
 }
 
 @media screen and (max-width: 1634px) {
