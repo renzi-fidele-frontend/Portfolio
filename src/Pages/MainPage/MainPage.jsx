@@ -106,7 +106,7 @@ const MainPage = () => {
             <div>
                {" "}
                <div id={styles.left}>
-                  <img id={styles.me} src={me} alt="" />
+                  <img id={styles.me} src={me} alt="Foto da Amanda Caleiras" />
                   <i id={styles.iconTop}>
                      <svg viewBox="0 0 123 123" fill="var(--var-cor-decoracao)" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -131,7 +131,7 @@ const MainPage = () => {
                      Sou<span></span>
                      <Typewriter
                         options={{
-                           strings: ["uma desenvolvedora de front-end", "um programadora", "a melhor escolha pra você"],
+                           strings: ["uma desenvolvedora de front-end", "uma freelancer de qualidade", "a melhor escolha pra você"],
                            autoStart: true,
                            loop: true,
                            delay: 75,
