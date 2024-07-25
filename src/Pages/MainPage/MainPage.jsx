@@ -201,11 +201,13 @@ const MainPage = () => {
                            </i>
                         </div>
                         <div id={styles.rightCard}>
-                           <span>2022 - Present</span>
+                           <span>2022 - Até o momento</span>
                            <h5>Web Freelancer - Workana</h5>
                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab voluptates ducimus quam aperiam odit, minima
-                              fugiat accusamus, maiores nesciunt suscipit similique nostrum mollitia repellat autem fuga ea eius temporibus.
+                              Ao longo da minha jornada na Workana, tive a oportunidade de colaborar com diversos clientes e projetos,
+                              desenvolvendo soluções inovadoras e personalizadas. A plataforma me permitiu ampliar meu portfólio, trabalhando em
+                              áreas como frontend, design gráfico, edição de vídeo e marketing digital. Cada experiência me ajudou a aprimorar
+                              minhas habilidades e a entregar resultados excepcionais que superaram as expectativas dos clientes.
                            </p>
                         </div>
                      </div>
@@ -216,29 +218,14 @@ const MainPage = () => {
                            </i>
                         </div>
                         <div id={styles.rightCard}>
-                           <span>2022 - Present</span>
-                           <h5>Desenvolvedora FrontEnd - ANOVAFASE</h5>
+                           <span>2022 - Até o momento</span>
+                           <h5>Web Freelancer - UpWork</h5>
                            <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab voluptates ducimus quam aperiam odit, minima
-                              fugiat accusamus, maiores nesciunt suscipit similique nostrum mollitia repellat autem fuga ea eius temporibus.
+                           Minha experiência no Upwork foi marcada por colaborações internacionais que enriqueceram minha perspectiva profissional. Trabalhei com clientes de diferentes partes do mundo, oferecendo soluções criativas e técnicas em frontend, design gráfico, edição de vídeo e marketing digital. A diversidade de projetos e a demanda por alta qualidade me impulsionaram a melhorar continuamente e a entregar trabalhos que fazem a diferença.
                            </p>
                         </div>
                      </div>
-                     <div className={styles.cardXP}>
-                        <div id={styles.leftCard}>
-                           <i>
-                              <MdOutlineWorkHistory />
-                           </i>
-                        </div>
-                        <div id={styles.rightCard}>
-                           <span>2022 - 2023</span>
-                           <h5>Desenvolvedora FrontEnd - 99Freelas</h5>
-                           <p>
-                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ab voluptates ducimus quam aperiam odit, minima
-                              fugiat accusamus, maiores nesciunt suscipit similique nostrum mollitia repellat autem fuga ea eius temporibus.
-                           </p>
-                        </div>
-                     </div>
+                     
                   </div>
                </div>
             </div>
