@@ -419,6 +419,14 @@
    margin-bottom: 2%;
 }
 
+.slide:hover {
+   cursor: grab;
+}
+
+.slide:active {
+   cursor: grabbing;
+}
+
 /*------------Secao dos contacto-------*/
 #contacto {
    background-color: var(--cor-fundo1);

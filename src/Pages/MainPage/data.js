@@ -40,6 +40,17 @@ import avatar1 from "../../Images/Testemunhos/avatar1.gif";
 import avatar2 from "../../Images/Testemunhos/avatar2.gif";
 import avatar3 from "../../Images/Testemunhos/avatar3.png";
 import avatar4 from "../../Images/Testemunhos/avatar4.gif";
+import avatar5 from "../../Images/Testemunhos/avatar4.gif";
+import avatar6 from "../../Images/Testemunhos/avatar4.gif";
+import avatar7 from "../../Images/Testemunhos/avatar4.gif";
+import avatar8 from "../../Images/Testemunhos/avatar4.gif";
+import avatar9 from "../../Images/Testemunhos/avatar4.gif";
+import avatar10 from "../../Images/Testemunhos/avatar4.gif";
+import avatar11 from "../../Images/Testemunhos/avatar4.gif";
+import avatar12 from "../../Images/Testemunhos/avatar4.gif";
+import avatar13 from "../../Images/Testemunhos/avatar4.gif";
+import avatar14 from "../../Images/Testemunhos/avatar4.gif";
+import avatar15 from "../../Images/Testemunhos/avatar4.gif";
 
 // Icones dos cards de serviço
 import { CgWebsite } from "react-icons/cg";
@@ -52,30 +63,107 @@ export const testemunhos = [
    {
       fotoCliente: avatar1,
       topico: "Professional de excelente qualidade",
-      testemunho: "Eu considero o Renzi muito proativo e super talentoso, cuidou do meu problema num instante",
+      testemunho: "Amanda entregou exatamente o que precisávamos, com grande atenção aos detalhes. Recomendo!",
       nomeCliente: "Amanda Caleiras",
       profissaoCliente: "Ceo na ANOVAFASE",
    },
    {
       fotoCliente: avatar2,
       topico: "Professional de excelente qualidade",
-      testemunho: "Renzi foi super prático, fez um ótimo trabalho em pouquíssimo tempo cobrou um ótimo valor",
+      testemunho: "Trabalhar com Amanda foi uma experiência incrível. Profissionalismo e qualidade excepcionais.",
       nomeCliente: "Devid Ronald",
       profissaoCliente: "Cliente no Workana",
    },
    {
       fotoCliente: avatar3,
       topico: "Professional de excelente qualidade",
-      testemunho: "Seus serviços foram essenciais para o sucesso do meu projeto online! 💯",
+      testemunho: "Muito satisfeitos com o resultado final! Amanda superou nossas expectativas.",
       nomeCliente: "Ermelinda Manuel",
       profissaoCliente: "Assistente financeira",
    },
    {
       fotoCliente: avatar4,
       topico: "Professional de excelente qualidade",
-      testemunho: "Incrível! Contratei o Renzi como freelancer web e fiquei impressionado com seu trabalho! 🚀",
+      testemunho: "Amanda é uma profissional dedicada e talentosa. O projeto ficou perfeito.",
       nomeCliente: "Daniel França",
-      profissaoCliente: "Ceo no Nosso ads",
+      profissaoCliente: "Cliento no Workana",
+   },
+   {
+      fotoCliente: avatar4,
+      topico: "Professional de excelente qualidade",
+      testemunho: "Excelente comunicação e entrega pontual. Amanda é uma freelancer confiável.",
+      nomeCliente: "Daniel França",
+      profissaoCliente: "Cliento no Workana",
+   },
+   {
+      fotoCliente: avatar4,
+      topico: "Professional de excelente qualidade",
+      testemunho: "Fiquei impressionado com a criatividade e eficiência de Amanda. Excelente trabalho!",
+      nomeCliente: "Daniel França",
+      profissaoCliente: "Cliento no Workana",
+   },
+   {
+      fotoCliente: avatar4,
+      topico: "Professional de excelente qualidade",
+      testemunho: "Amanda transformou nossas ideias em realidade com uma habilidade incrível.",
+      nomeCliente: "Daniel França",
+      profissaoCliente: "Cliento no Workana",
+   },
+   {
+      fotoCliente: avatar4,
+      topico: "Professional de excelente qualidade",
+      testemunho: "Ótima experiência! Amanda entregou um trabalho de alta qualidade rapidamente.",
+      nomeCliente: "Daniel França",
+      profissaoCliente: "Cliento no Workana",
+   },
+   {
+      fotoCliente: avatar4,
+      topico: "Professional de excelente qualidade",
+      testemunho: "Profissional exemplar. Amanda nos ajudou a alcançar nossos objetivos com facilidade.",
+      nomeCliente: "Daniel França",
+      profissaoCliente: "Cliento no Workana",
+   },
+   {
+      fotoCliente: avatar4,
+      topico: "Professional de excelente qualidade",
+      testemunho: "Adoramos trabalhar com Amanda. Sempre disponível e pronta para ajudar.",
+      nomeCliente: "Daniel França",
+      profissaoCliente: "Cliento no Workana",
+   },
+   {
+      fotoCliente: avatar4,
+      topico: "Professional de excelente qualidade",
+      testemunho: "Amanda mostrou um comprometimento notável em nosso projeto. Altamente recomendada!",
+      nomeCliente: "Daniel França",
+      profissaoCliente: "Cliento no Workana",
+   },
+   {
+      fotoCliente: avatar4,
+      topico: "Professional de excelente qualidade",
+      testemunho: "Trabalho impecável e muita atenção aos detalhes. Amanda é fantástica.",
+      nomeCliente: "Daniel França",
+      profissaoCliente: "Cliento no Workana",
+   },
+   {
+      fotoCliente: avatar4,
+      topico: "Professional de excelente qualidade",
+      testemunho: "Resultados impressionantes e uma colaboração tranquila. Amanda é excelente.",
+      nomeCliente: "Daniel França",
+      profissaoCliente: "Cliento no Workana",
+   },
+   {
+      fotoCliente: avatar4,
+      topico: "Professional de excelente qualidade",
+      testemunho: "Amanda trouxe uma nova perspectiva ao nosso projeto. Estamos muito satisfeitos.",
+      nomeCliente: "Daniel França",
+      profissaoCliente: "Cliento no Workana",
+   },
+   {
+      fotoCliente: avatar4,
+      topico: "Professional de excelente qualidade",
+      testemunho: "Profissionalismo, qualidade e entrega no prazo. Amanda é uma verdadeira parceira.",
+      nomeCliente: "Daniel França",
+      profissaoCliente: "Cliento no Workana",
    },
 ];
 

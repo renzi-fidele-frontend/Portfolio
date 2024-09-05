@@ -565,16 +565,16 @@ const MainPage = () => {
             <Swiper
                modules={[Autoplay, Pagination]}
                className={styles.swipperContainer}
-               speed={500}
+               speed={1800}
                spaceBetween={20}
-               autoplay={true}
+               autoplay={{ delay: 2000 }}
                pagination={{ type: "bullets", el: `.${styles.pag}`, clickable: true }}
                slidesPerView={"auto"}
                breakpoints={{ 950: { slidesPerView: 2 }, 1550: { slidesPerView: 3 } }}
             >
                <div>
                   {testemunhos.map((v, k) => (
-                     <SwiperSlide key={k}>
+                     <SwiperSlide className={styles.slide}  key={k}>
                         <TestemunhoCard
                            fotoCliente={v.fotoCliente}
                            nomeCliente={v.nomeCliente}
