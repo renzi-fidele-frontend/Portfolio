@@ -49,7 +49,7 @@ const Portfolio = () => {
       </div>
    );
 
-   // TODO: Carregar os vídeos no cloudflare
+   // TODO: Carregar os vídeos no cloudinary
 };
 
 export default Portfolio;

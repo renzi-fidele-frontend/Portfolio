@@ -14,8 +14,6 @@ import thumb3 from "../../Images/BelezeShop.jpg";
 import thumb4 from "../../Images/Criptoverso.jpg";
 import thumb5 from "../../Images/LugaresApp.jpg";
 import thumb6 from "../../Images/amc.jpg";
-import thumb7 from "../../Images/Custos.jpg";
-import thumb8 from "../../Images/amc.jpg";
 
 // Fotos dos clientes que testemunharam
 import avatar1 from "../../Images/avatar1.gif";

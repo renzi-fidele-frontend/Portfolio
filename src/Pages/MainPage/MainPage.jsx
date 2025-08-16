@@ -7,8 +7,8 @@ import TestemunhoCard from "../../Components/TestemunhoCard/TestemunhoCard";
 import ServicoCard from "../../Components/ServicoCard/ServicoCard";
 import HeaderMobile from "../../Components/HeaderMobile/HeaderMobile";
 
-import me from "../../Images/me1.gif";
-import crazy from "../../Images/meReal.gif";
+import me from "../../Images/me.jpg";
+import crazy from "../../Images/me2.jpg";
 import curiculo from "../../../src/Images/Renzi_Fidele.pdf";
 
 //  Icons
@@ -552,7 +552,6 @@ const MainPage = () => {
                   </div>
                </div>
                <div id={styles.locationCont}>
-                  {/*  TODO: Mapa por idioma */}
                   <iframe
                      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d557.9820380597123!2d32.54581336066112!3d-25.876657213551134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-PT!2smz!4v1688428470244!5m2!1spt-PT!2smz"
                      width="100%"
