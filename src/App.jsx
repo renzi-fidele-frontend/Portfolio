@@ -4,6 +4,10 @@ import "./App.css";
 import { NavProvider } from "./Context/NavContext";
 import { Outlet } from "react-router-dom";
 import { LangProvider } from "./Context/LangContext";
+import PreLoader from "./Components/PreLoader/PreLoader";
+
+// TODO: Adicionar um preLoader mais avançado
+// TODO: Adicionar abas de categoria
 
 function App() {
    const [nav, setNav] = useState(false);
@@ -12,7 +16,7 @@ function App() {
    return (
       <LangProvider value={{ idioma, setIdioma }}>
          <NavProvider value={{ nav, setNav }}>
-            <Suspense fallback={<p>Loading...</p>}>
+            <Suspense fallback={<PreLoader />}>
                <div id="App">
                   <LeftNav />
                   <Outlet />
