@@ -56,13 +56,29 @@
       },
       "portfolio": {
          "tit": "Meu Portifólio",
-         "array": [
-            { "titulo": "Musify Pro: Leitor de prévias do Spotify", "tipo": "Website" },
-            { "titulo": "Site para a venda de óculos Beleza", "tipo": "Website" },
+         "arrayReact": [
+            { "titulo": "Musify Pro: Leitor de prévias do Spotify", "tipo": "Web App" },
+            { "titulo": "Site para a venda de óculos Beleza", "tipo": "Product Catalog" },
             { "titulo": "Blog de curiosidades fullstack com chat global", "tipo": "Blog" },
-            { "titulo": "Site de compatilhamento de lugares do mundo", "tipo": "Website" },
-            { "titulo": "Criptoverso: Site informativo sobre criptomedas", "tipo": "Website" },
-            { "titulo": "Site institucional da AMC Contruções", "tipo": "Site institucional" }
+            { "titulo": "Site de compatilhamento de lugares do mundo", "tipo": "Web App" },
+            { "titulo": "Criptoverso: Site informativo sobre criptomedas", "tipo": "Web App" },
+            { "titulo": "Custos: Gerenciador de projetos", "tipo": "Web App" }
+         ],
+         "arrayLP": [
+            { "titulo": "Led Truck: Empresa de propaganda e publicidade", "tipo": "Landing Page" },
+            { "titulo": "Bebida Solidária: Associação de apoio a caridades", "tipo": "Landing Page" },
+            { "titulo": "Comunidade de Saúde Integrativa para Cães", "tipo": "Landing Page" },
+            { "titulo": "A&B: Advocacia Empresarial", "tipo": "Landing Page" },
+            { "titulo": "Comunidade de Saúde Integrativa para Gatos", "tipo": "Landing Page" },
+            { "titulo": "Unity Carlessi: Construtora de imóveis", "tipo": "Landing Page" }
+         ],
+         "arrayInstitucional": [
+            { "titulo": "Antoniolli: Construtora de imóveis", "tipo": "Site institucional" },
+            { "titulo": "AMC Contruções: Construtora de imóveis", "tipo": "Site institucional" },
+            { "titulo": "Unik Benefícios: Seguradora de veículos", "tipo": "Site institucional" },
+            { "titulo": "Online Corretora de Seguros", "tipo": "Site institucional" },
+            { "titulo": "DM Turismo: Empresa de translados", "tipo": "Site institucional" },
+            { "titulo": "Kgn Construções: Construtora de imóveis", "tipo": "Site institucional" }
          ]
       },
       "testemunhos": {

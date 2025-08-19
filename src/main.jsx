@@ -5,6 +5,7 @@ import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Portfolio from "./Pages/Portfolio/Portfolio.jsx";
 import MainPage from "./Pages/MainPage/MainPage.jsx";
+import "react-tabs/style/react-tabs.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
    <React.StrictMode>

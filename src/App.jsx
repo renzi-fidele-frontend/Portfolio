@@ -6,9 +6,6 @@ import { Outlet } from "react-router-dom";
 import { LangProvider } from "./Context/LangContext";
 import PreLoader from "./Components/PreLoader/PreLoader";
 
-// TODO: Adicionar um preLoader mais avançado
-// TODO: Adicionar abas de categoria
-
 function App() {
    const [nav, setNav] = useState(false);
    const [idioma, setIdioma] = useState("pt");
