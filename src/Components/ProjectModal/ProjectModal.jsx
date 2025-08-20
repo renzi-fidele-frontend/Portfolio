@@ -31,6 +31,7 @@ const ProjectModal = () => {
                <div className={styles.left}>
                   {loc.state.video && (
                      <video
+                        loop
                         onLoadStart={(e) => {
                            e.currentTarget.classList.add(styles.loadingV);
                         }}

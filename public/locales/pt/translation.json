@@ -58,11 +58,11 @@
          "tit": "Meu Portifólio",
          "arrayReact": [
             { "titulo": "Musify Pro: Leitor de prévias do Spotify", "tipo": "Web App" },
-            { "titulo": "Site para a venda de óculos Beleza", "tipo": "Product Catalog" },
+            { "titulo": "Site para a venda de óculos Beleza" },
             { "titulo": "Blog de curiosidades fullstack com chat global", "tipo": "Blog" },
             { "titulo": "Site de compatilhamento de lugares do mundo", "tipo": "Web App" },
             { "titulo": "Criptoverso: Site informativo sobre criptomedas", "tipo": "Web App" },
-            { "titulo": "Custos: Gerenciador de projetos", "tipo": "Web App" }
+            { "titulo": "Site de ginástica e rastreamento de treinamentos", "tipo": "Web App" }
          ],
          "arrayLP": [
             { "titulo": "Led Truck: Empresa de propaganda e publicidade", "tipo": "Landing Page" },

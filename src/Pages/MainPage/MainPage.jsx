@@ -402,127 +402,9 @@ const MainPage = () => {
             </h2>
             <Tabs>
                <TabList>
-                  <Tab>Landing Page</Tab>
-                  <Tab>Institucional</Tab>
-                  <Tab>ReactJs</Tab>
+                  <Tab>ReactJs / NextJs</Tab>
+                  <Tab>Wordpress (Elementor)</Tab>
                </TabList>
-               {/* Landing Page */}
-               <TabPanel>
-                  {/*  Desktop  */}
-                  <div id={styles.grelha}>
-                     {portfolioLandingPage.map(
-                        (v, k) =>
-                           k < 6 && (
-                              <ProjectCard
-                                 titulo={v.titulo}
-                                 urlProjeto={v.url}
-                                 plataforma={v.plataforma}
-                                 linguagens={v.linguagens}
-                                 tipo={v.tipo}
-                                 repositorio={v.repositorio}
-                                 imagemDestaque={v.imagemDestaque}
-                                 videoDestaque={v.videoDestaque}
-                                 imagemThumbnail={v.imagemThumbnail}
-                                 key={k}
-                                 thumbnailCentralizado={v.fotoCentralizada}
-                              />
-                           )
-                     )}
-                  </div>
-                  {/*  Mobile  */}
-                  <div className={styles.swiperMobileCt}>
-                     <Swiper
-                        modules={[Pagination]}
-                        className={styles.swipperContainer}
-                        speed={500}
-                        spaceBetween={20}
-                        pagination={{ type: "bullets", el: `.${styles.pag}`, clickable: true }}
-                        slidesPerView={"auto"}
-                        breakpoints={{ 950: { slidesPerView: 2 }, 1550: { slidesPerView: 3 } }}
-                     >
-                        {portfolioLandingPage.map(
-                           (v, k) =>
-                              k < 6 && (
-                                 <SwiperSlide key={k}>
-                                    <ProjectCard
-                                       titulo={v.titulo}
-                                       urlProjeto={v.url}
-                                       plataforma={v.plataforma}
-                                       linguagens={v.linguagens}
-                                       tipo={v.tipo}
-                                       repositorio={v.repositorio}
-                                       imagemDestaque={v.imagemDestaque}
-                                       videoDestaque={v.videoDestaque}
-                                       imagemThumbnail={v.imagemThumbnail}
-                                       thumbnailCentralizado={v.fotoCentralizada}
-                                    />
-                                 </SwiperSlide>
-                              )
-                        )}
-
-                        <div className={styles.pag}></div>
-                     </Swiper>
-                  </div>
-               </TabPanel>
-               
-               {/* Institucional */}
-               <TabPanel>
-                  {/*  Desktop  */}
-                  <div id={styles.grelha}>
-                     {portfolioInstitucional.map(
-                        (v, k) =>
-                           k < 6 && (
-                              <ProjectCard
-                                 titulo={v.titulo}
-                                 urlProjeto={v.url}
-                                 plataforma={v.plataforma}
-                                 linguagens={v.linguagens}
-                                 tipo={v.tipo}
-                                 repositorio={v.repositorio}
-                                 imagemDestaque={v.imagemDestaque}
-                                 videoDestaque={v.videoDestaque}
-                                 imagemThumbnail={v.imagemThumbnail}
-                                 key={k}
-                                 thumbnailCentralizado={v.fotoCentralizada}
-                              />
-                           )
-                     )}
-                  </div>
-                  {/*  Mobile  */}
-                  <div className={styles.swiperMobileCt}>
-                     <Swiper
-                        modules={[Pagination]}
-                        className={styles.swipperContainer}
-                        speed={500}
-                        spaceBetween={20}
-                        pagination={{ type: "bullets", el: `.${styles.pag}`, clickable: true }}
-                        slidesPerView={"auto"}
-                        breakpoints={{ 950: { slidesPerView: 2 }, 1550: { slidesPerView: 3 } }}
-                     >
-                        {portfolioInstitucional.map(
-                           (v, k) =>
-                              k < 6 && (
-                                 <SwiperSlide key={k}>
-                                    <ProjectCard
-                                       titulo={v.titulo}
-                                       urlProjeto={v.url}
-                                       plataforma={v.plataforma}
-                                       linguagens={v.linguagens}
-                                       tipo={v.tipo}
-                                       repositorio={v.repositorio}
-                                       imagemDestaque={v.imagemDestaque}
-                                       videoDestaque={v.videoDestaque}
-                                       imagemThumbnail={v.imagemThumbnail}
-                                       thumbnailCentralizado={v.fotoCentralizada}
-                                    />
-                                 </SwiperSlide>
-                              )
-                        )}
-
-                        <div className={styles.pag}></div>
-                     </Swiper>
-                  </div>
-               </TabPanel>
 
                {/* ReactJs / NextJs */}
                <TabPanel>
@@ -559,6 +441,65 @@ const MainPage = () => {
                         breakpoints={{ 950: { slidesPerView: 2 }, 1550: { slidesPerView: 3 } }}
                      >
                         {portfolioReact.map(
+                           (v, k) =>
+                              k < 6 && (
+                                 <SwiperSlide key={k}>
+                                    <ProjectCard
+                                       titulo={v.titulo}
+                                       urlProjeto={v.url}
+                                       plataforma={v.plataforma}
+                                       linguagens={v.linguagens}
+                                       tipo={v.tipo}
+                                       repositorio={v.repositorio}
+                                       imagemDestaque={v.imagemDestaque}
+                                       videoDestaque={v.videoDestaque}
+                                       imagemThumbnail={v.imagemThumbnail}
+                                       thumbnailCentralizado={v.fotoCentralizada}
+                                    />
+                                 </SwiperSlide>
+                              )
+                        )}
+
+                        <div className={styles.pag}></div>
+                     </Swiper>
+                  </div>
+               </TabPanel>
+
+               {/* Wordpress (Elementor) */}
+               <TabPanel>
+                  {/*  Desktop  */}
+                  <div id={styles.grelha}>
+                     {portfolioInstitucional.map(
+                        (v, k) =>
+                           k < 6 && (
+                              <ProjectCard
+                                 titulo={v.titulo}
+                                 urlProjeto={v.url}
+                                 plataforma={v.plataforma}
+                                 linguagens={v.linguagens}
+                                 tipo={v.tipo}
+                                 repositorio={v.repositorio}
+                                 imagemDestaque={v.imagemDestaque}
+                                 videoDestaque={v.videoDestaque}
+                                 imagemThumbnail={v.imagemThumbnail}
+                                 key={k}
+                                 thumbnailCentralizado={v.fotoCentralizada}
+                              />
+                           )
+                     )}
+                  </div>
+                  {/*  Mobile  */}
+                  <div className={styles.swiperMobileCt}>
+                     <Swiper
+                        modules={[Pagination]}
+                        className={styles.swipperContainer}
+                        speed={500}
+                        spaceBetween={20}
+                        pagination={{ type: "bullets", el: `.${styles.pag}`, clickable: true }}
+                        slidesPerView={"auto"}
+                        breakpoints={{ 950: { slidesPerView: 2 }, 1550: { slidesPerView: 3 } }}
+                     >
+                        {portfolioInstitucional.map(
                            (v, k) =>
                               k < 6 && (
                                  <SwiperSlide key={k}>

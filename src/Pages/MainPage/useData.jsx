@@ -30,7 +30,7 @@ import thumb2 from "../../Images/React/nossoBlog.jpg";
 import thumb3 from "../../Images/React/BelezeShop.jpg";
 import thumb4 from "../../Images/React/Criptoverso.jpg";
 import thumb5 from "../../Images/React/LugaresApp.jpg";
-import thumb6 from "../../Images/React/Custos.jpg";
+import thumb6 from "../../Images/React/fit-treinos.jpg";
 
 // Institucional----------------------
 import ist1 from "../../Images/Institucional/antoniolli.jpg";
@@ -163,7 +163,6 @@ const useData = () => {
          imagemThumbnail: thumb2,
          fotoCentralizada: true,
       },
-
       {
          titulo: t("sections.portfolio.arrayReact.3.titulo"),
          url: "https://lugares-app.vercel.app/",
@@ -188,14 +187,14 @@ const useData = () => {
       },
       {
          titulo: t("sections.portfolio.arrayReact.5.titulo"),
-         url: "https://custos-five.vercel.app/",
+         url: "https://fit-treinos.vercel.app/",
          plataforma: "Vercel",
-         linguagens: ["ReactJs, Firebase, Css"],
+         linguagens: ["ReactJs, Bootstrap, Node, MongoDB"],
          tipo: "Website",
-         repositorio: "https://github.com/renzi-fidele-frontend/custos",
+         repositorio: "https://github.com/renzi-fidele-frontend/fit-treinos",
          imagemThumbnail: thumb6,
          fotoCentralizada: true,
-         videoDestaque: video6,
+         videoDestaque: "https://res.cloudinary.com/dtm3uwkmw/video/upload/v1755708605/VID_20250820_183905_qm0wy1.mov",
       },
    ];
 

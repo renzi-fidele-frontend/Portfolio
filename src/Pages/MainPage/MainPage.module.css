@@ -250,8 +250,8 @@
 
 #sobre #right .duasCol {
    display: grid;
-   grid-template-columns: 100%;
-   margin-bottom: 2.9%;
+   grid-template-columns: 50% 50%;
+   margin-bottom: 5%;
 }
 
 #sobre #right .duasCol > div {
@@ -259,6 +259,7 @@
    flex-direction: column;
    padding-left: 7%;
    justify-content: space-between;
+   gap: 0.5rem;
 }
 
 #sobre #right .duasCol > div > a {
@@ -293,7 +294,7 @@
 
 #sobre #right > div {
    position: sticky;
-   top: 0;
+   top: 1rem;
 }
 
 /*-----------------Àrea das minhas habilidades----------------  */
@@ -824,7 +825,7 @@
    }
 
    #sobre #right .duasCol {
-      padding-right: 10%;
+      padding-right: 0;
    }
 
    #sobre #secaoSobre > h5 {
