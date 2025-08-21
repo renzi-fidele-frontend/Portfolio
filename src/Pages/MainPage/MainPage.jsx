@@ -410,24 +410,21 @@ const MainPage = () => {
                <TabPanel>
                   {/*  Desktop  */}
                   <div id={styles.grelha}>
-                     {portfolioReact.map(
-                        (v, k) =>
-                           k < 6 && (
-                              <ProjectCard
-                                 titulo={v.titulo}
-                                 urlProjeto={v.url}
-                                 plataforma={v.plataforma}
-                                 linguagens={v.linguagens}
-                                 tipo={v.tipo}
-                                 repositorio={v.repositorio}
-                                 imagemDestaque={v.imagemDestaque}
-                                 videoDestaque={v.videoDestaque}
-                                 imagemThumbnail={v.imagemThumbnail}
-                                 key={k}
-                                 thumbnailCentralizado={v.fotoCentralizada}
-                              />
-                           )
-                     )}
+                     {portfolioReact.map((v, k) => (
+                        <ProjectCard
+                           titulo={v.titulo}
+                           urlProjeto={v.url}
+                           plataforma={v.plataforma}
+                           linguagens={v.linguagens}
+                           tipo={v.tipo}
+                           repositorio={v.repositorio}
+                           imagemDestaque={v.imagemDestaque}
+                           videoDestaque={v.videoDestaque}
+                           imagemThumbnail={v.imagemThumbnail}
+                           key={k}
+                           thumbnailCentralizado={v.fotoCentralizada}
+                        />
+                     ))}
                   </div>
                   {/*  Mobile  */}
                   <div className={styles.swiperMobileCt}>
@@ -440,25 +437,22 @@ const MainPage = () => {
                         slidesPerView={"auto"}
                         breakpoints={{ 950: { slidesPerView: 2 }, 1550: { slidesPerView: 3 } }}
                      >
-                        {portfolioReact.map(
-                           (v, k) =>
-                              k < 6 && (
-                                 <SwiperSlide key={k}>
-                                    <ProjectCard
-                                       titulo={v.titulo}
-                                       urlProjeto={v.url}
-                                       plataforma={v.plataforma}
-                                       linguagens={v.linguagens}
-                                       tipo={v.tipo}
-                                       repositorio={v.repositorio}
-                                       imagemDestaque={v.imagemDestaque}
-                                       videoDestaque={v.videoDestaque}
-                                       imagemThumbnail={v.imagemThumbnail}
-                                       thumbnailCentralizado={v.fotoCentralizada}
-                                    />
-                                 </SwiperSlide>
-                              )
-                        )}
+                        {portfolioReact.map((v, k) => (
+                           <SwiperSlide key={k}>
+                              <ProjectCard
+                                 titulo={v.titulo}
+                                 urlProjeto={v.url}
+                                 plataforma={v.plataforma}
+                                 linguagens={v.linguagens}
+                                 tipo={v.tipo}
+                                 repositorio={v.repositorio}
+                                 imagemDestaque={v.imagemDestaque}
+                                 videoDestaque={v.videoDestaque}
+                                 imagemThumbnail={v.imagemThumbnail}
+                                 thumbnailCentralizado={v.fotoCentralizada}
+                              />
+                           </SwiperSlide>
+                        ))}
 
                         <div className={styles.pag}></div>
                      </Swiper>

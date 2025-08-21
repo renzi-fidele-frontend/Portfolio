@@ -138,7 +138,7 @@ const useData = () => {
       },
       {
          titulo: t("sections.portfolio.arrayReact.1.titulo"),
-         url: "https://www.belezanosolhos.com.br/",
+         url: "https://beleza-shop.vercel.app/",
          plataforma: "Vercel",
          linguagens: ["ReactJs, Css, Yampi"],
          tipo: t("sections.portfolio.arrayReact.1.tipo"),
