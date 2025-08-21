@@ -57,8 +57,8 @@
       "portfolio": {
          "tit": "My Portfolio",
          "arrayReact": [
-            { "titulo": "Musify Pro: Spotify Preview Songs Player", "tipo": "Web App" },
-            { "titulo": "Website for selling Beleza glasses", "tipo": "Ecommerce" },
+            { "titulo": "Musify Pro: Spotify Preview Songs Player", "tipo": "Music Player App" },
+            { "titulo": "Website for selling Beleza glasses", "tipo": "Product Catalog" },
             { "titulo": "Fullstack curiosities blog with global chat", "tipo": "Blog and Chat App" },
             { "titulo": "Fullstack places sharing website", "tipo": "Web App" },
             { "titulo": "Cryptoverso: Informative website about cryptocurrencies", "tipo": "Web App" },

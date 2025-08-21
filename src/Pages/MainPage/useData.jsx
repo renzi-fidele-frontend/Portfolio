@@ -1,11 +1,6 @@
 // Demo full-size dos projetos
 // React -----------------------
-import video1 from "../../Videos/MusifyPro.mp4";
-import video2 from "../../Videos/NossoBlog.mp4";
-import video3 from "../../Videos/BelezaShop.mp4";
 import demo4 from "../../Images/React/LugaresAppDestaque.jpg";
-import video5 from "../../Videos/Criptoverso.mp4";
-import video6 from "../../Videos/Custos.mp4";
 
 // Landing Page----------------------
 import destaqueLP1 from "../../Images/LP/demo/ledstruck2.jpg";
@@ -135,9 +130,9 @@ const useData = () => {
          url: "https://musify-pro.vercel.app/",
          plataforma: "Vercel",
          linguagens: ["ReactJs, Css, ContextApi, Spotify Api"],
-         tipo: "Website",
+         tipo: t("sections.portfolio.arrayReact.0.tipo"),
          repositorio: "https://github.com/renzi-fidele-frontend/Music-player-app",
-         videoDestaque: video1,
+         videoDestaque: "https://res.cloudinary.com/dtm3uwkmw/video/upload/v1755761921/MusifyPro_wm98ss.mp4",
          imagemThumbnail: thumb1,
          fotoCentralizada: true,
       },
@@ -148,7 +143,7 @@ const useData = () => {
          linguagens: ["ReactJs, Css, Yampi"],
          tipo: t("sections.portfolio.arrayReact.1.tipo"),
          repositorio: "https://github.com/renzi-fidele-frontend/BelezaShop",
-         videoDestaque: video3,
+         videoDestaque: "https://res.cloudinary.com/dtm3uwkmw/video/upload/v1755761928/BelezaShop_llodg9.mp4",
          imagemThumbnail: thumb3,
          fotoCentralizada: true,
       },
@@ -159,7 +154,7 @@ const useData = () => {
          linguagens: ["ReactJs, Redux, Firebase, Css"],
          tipo: t("sections.portfolio.arrayReact.2.tipo"),
          repositorio: "https://github.com/renzi-fidele-frontend/Nossoblog",
-         videoDestaque: video2,
+         videoDestaque: "https://res.cloudinary.com/dtm3uwkmw/video/upload/v1755761927/NossoBlog_aydld9.mp4",
          imagemThumbnail: thumb2,
          fotoCentralizada: true,
       },
@@ -181,7 +176,7 @@ const useData = () => {
          linguagens: ["ReactJs, Bootstrap, Redux, Rapid Api"],
          tipo: t("sections.portfolio.arrayReact.4.tipo"),
          repositorio: "https://github.com/renzi-fidele-frontend/criptoverso",
-         videoDestaque: video5,
+         videoDestaque: "https://res.cloudinary.com/dtm3uwkmw/video/upload/v1755761920/Criptoverso_elmhmk.mov",
          imagemThumbnail: thumb4,
          fotoCentralizada: true,
       },
@@ -190,7 +185,7 @@ const useData = () => {
          url: "https://fit-treinos.vercel.app/",
          plataforma: "Vercel",
          linguagens: ["ReactJs, Bootstrap, Node, MongoDB"],
-         tipo: "Website",
+         tipo: t("sections.portfolio.arrayReact.5.tipo"),
          repositorio: "https://github.com/renzi-fidele-frontend/fit-treinos",
          imagemThumbnail: thumb6,
          fotoCentralizada: true,

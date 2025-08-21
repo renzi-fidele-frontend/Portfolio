@@ -57,12 +57,12 @@
       "portfolio": {
          "tit": "Meu Portifólio",
          "arrayReact": [
-            { "titulo": "Musify Pro: Leitor de prévias do Spotify", "tipo": "Web App" },
-            { "titulo": "Site para a venda de óculos Beleza" },
-            { "titulo": "Blog de curiosidades fullstack com chat global", "tipo": "Blog" },
-            { "titulo": "Site de compatilhamento de lugares do mundo", "tipo": "Web App" },
-            { "titulo": "Criptoverso: Site informativo sobre criptomedas", "tipo": "Web App" },
-            { "titulo": "Site de ginástica e rastreamento de treinamentos", "tipo": "Web App" }
+            { "titulo": "Musify Pro: Leitor de prévias do Spotify", "tipo": "Leitor de músicas" },
+            { "titulo": "Site para a venda de óculos Beleza", "tipo": "Catálogo de produto" },
+            { "titulo": "Blog de curiosidades fullstack com chat global", "tipo": "Blog e Messenger" },
+            { "titulo": "Site de compatilhamento de lugares do mundo", "tipo": "Aplicação Web" },
+            { "titulo": "Criptoverso: Site informativo sobre criptomedas", "tipo": "Aplicação Web" },
+            { "titulo": "Site de ginástica e rastreamento de treinamentos", "tipo": "Aplicação Web" }
          ],
          "arrayLP": [
             { "titulo": "Led Truck: Empresa de propaganda e publicidade", "tipo": "Landing Page" },
