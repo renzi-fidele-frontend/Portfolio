@@ -68,11 +68,11 @@ const LeftNav = () => {
                <div className={styles.langCt}>
                   <BsGlobe />
                   <p>
-                     <span onClick={() => mudarIdioma("en")} className={lang.idioma === "en" && styles.langAtivo}>
+                     <span onClick={() => mudarIdioma("en")} className={lang.idioma.includes("en") && styles.langAtivo}>
                         EN
                      </span>{" "}
                      /{" "}
-                     <span onClick={() => mudarIdioma("pt")} className={lang.idioma === "pt" && styles.langAtivo}>
+                     <span onClick={() => mudarIdioma("pt")} className={lang.idioma.includes("pt") && styles.langAtivo}>
                         PT
                      </span>
                   </p>
