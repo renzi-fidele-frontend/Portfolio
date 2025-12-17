@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./MainPage.module.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import ProjectModal from "../../Components/ProjectModal/ProjectModal";
@@ -13,7 +13,7 @@ import curiculo from "../../../src/Images/Renzi_Fidele.pdf";
 
 //  Icons
 import { BiSolidMessageAltDetail, BiSolidPhoneCall } from "react-icons/bi";
-import { FaFilePdf, FaPlus } from "react-icons/fa";
+import { FaFilePdf } from "react-icons/fa";
 import { ImLocation2 } from "react-icons/im";
 import { BsDownload } from "react-icons/bs";
 import { AiOutlineWhatsApp, AiFillLinkedin, AiFillGithub, AiOutlineMail, AiFillInstagram, AiFillFacebook } from "react-icons/ai";
@@ -38,13 +38,9 @@ import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
 
 const MainPage = () => {
    const { t } = useTranslation();
-
-   const { portfolioReact, portfolioLandingPage, portfolioInstitucional, servicos, testemunhos } = useData();
-
+   const { portfolioReact, portfolioInstitucional, servicos, testemunhos } = useData();
    const skillsRef = useRef();
-
    const loc = useLocation();
-
    const secinicio = useRef();
    const secSobre = useRef();
    const secServicos = useRef();
@@ -114,6 +110,14 @@ const MainPage = () => {
          });
    }
 
+   const [cores, setCores] = useState([
+      { cor: "#C2E7FF", ativo: true },
+      { cor: "#f4c2ffff", ativo: false },
+      { cor: "#c2ffccff", ativo: false },
+      { cor: "#fffac2ff", ativo: false },
+      { cor: "#fba6a6ff", ativo: false },
+   ]);
+
    return (
       <div id={styles.container}>
          {/*Header invisivel */}
@@ -153,6 +157,12 @@ const MainPage = () => {
                   </i>
                </div>
                <div id={styles.right}>
+                  {/* TODO: Implementar seção das cores da mudança do tema */}
+                  <div className={styles.cores}>
+                     {cores?.map((v, k) => (
+                        <div style={{ backgroundColor: v.cor }} className={v.ativo ? styles.ativo : ""} key={k}></div>
+                     ))}
+                  </div>
                   <h6>👋 {t("sections.inicio.greet")}</h6>
                   <h1>Renzi Fidele</h1>
                   <h4>

@@ -13,6 +13,30 @@
    background-color: var(--cor-fundo0);
 }
 
+.cores {
+   display: flex;
+   gap: 1.2rem;
+   margin-bottom: 1.5rem;
+}
+
+.cores div {
+   border-radius: 50%;
+   width: 26px;
+   height: 26px;
+   border: black solid 1px;
+   cursor: pointer;
+   transition: scale 0.3s ease;
+}
+
+.cores div:hover,
+.cores .ativo {
+   scale: 1.1;
+}
+
+.cores .ativo {
+   border: black solid 3px;
+}
+
 #me {
    max-width: 100%;
    border-radius: 40px;
