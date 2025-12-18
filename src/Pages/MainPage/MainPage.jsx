@@ -118,6 +118,11 @@ const MainPage = () => {
       { cor: "#fba6a6ff", ativo: false },
    ]);
 
+   function handleColorChange(color) {
+      setCores((prevState) => prevState.map((v) => ({ ...v, ativo: v.cor === color })));
+      document.documentElement.style.setProperty("--var-cor-decoracao", color);
+   }
+
    return (
       <div id={styles.container}>
          {/*Header invisivel */}
@@ -157,10 +162,14 @@ const MainPage = () => {
                   </i>
                </div>
                <div id={styles.right}>
-                  {/* TODO: Implementar seção das cores da mudança do tema */}
                   <div className={styles.cores}>
                      {cores?.map((v, k) => (
-                        <div style={{ backgroundColor: v.cor }} className={v.ativo ? styles.ativo : ""} key={k}></div>
+                        <div
+                           style={{ backgroundColor: v.cor }}
+                           className={v.ativo ? styles.ativo : ""}
+                           onClick={() => handleColorChange(v.cor)}
+                           key={k}
+                        ></div>
                      ))}
                   </div>
                   <h6>👋 {t("sections.inicio.greet")}</h6>
