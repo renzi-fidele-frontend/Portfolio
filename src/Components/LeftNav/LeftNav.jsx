@@ -2,12 +2,13 @@ import { useEffect, useRef } from "react";
 import styles from "./LeftNav.module.css";
 import { Link, NavLink } from "react-router-dom";
 import { IoHome } from "react-icons/io5";
-import { BsPersonFill, BsBriefcaseFill, BsGrid1X2Fill, BsTelephoneFill, BsGlobe } from "react-icons/bs";
+import { BsPersonFill, BsBriefcaseFill, BsGrid1X2Fill, BsTelephoneFill, BsGlobe, BsMoonFill, BsMoonStarsFill } from "react-icons/bs";
 import logo from "../../Images/lg.png";
 import { NavValue } from "../../Context/NavContext";
 import { LangValue } from "../../Context/LangContext";
 import i18n from "../../i18n/i18n";
 import { useTranslation } from "react-i18next";
+import { MdSunny } from "react-icons/md";
 
 const LeftNav = () => {
    const { t } = useTranslation();
@@ -65,6 +66,7 @@ const LeftNav = () => {
                   <BsTelephoneFill />
                   <p>{t("navbar.4")}</p>
                </NavLink>
+               {/* Mudar idioma */}
                <div className={styles.langCt}>
                   <BsGlobe />
                   <p>
@@ -76,6 +78,11 @@ const LeftNav = () => {
                         PT
                      </span>
                   </p>
+               </div>
+               {/* Mudar Tema */}
+               <div className={styles.darkLightCt}>
+                  {/* <MdSunny /> */}
+                  <BsMoonStarsFill />
                </div>
             </ul>
          </div>
