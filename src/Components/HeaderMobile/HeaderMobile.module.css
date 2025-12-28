@@ -24,6 +24,28 @@
    cursor: pointer;
 }
 
+.langCt {
+   display: flex;
+   align-items: center;
+   gap: 6px !important;
+   margin-right: 23px;
+   margin-left: auto;
+}
+
+.langCt svg {
+margin-right: 4px;
+}
+
+.langCt,
+#header > span {
+   font-size: 25px;
+}
+
+.ativo {
+   font-weight: 700;
+   text-decoration: underline;
+}
+
 @media screen and (max-width: 1208px) {
    #header {
       display: flex;
@@ -38,7 +60,6 @@
    }
 
    #header > span {
-      font-size: 40px;
       display: inherit;
       align-items: center;
    }
@@ -55,11 +76,17 @@
       width: 110px;
    }
 
-   #header > span {
-      font-size: 35px;
-   }
    #header > img {
       width: 130px;
+   }
+
+   .langCt {
+      margin-right: 17px;
+   }
+
+   .langCt,
+   #header > span {
+      font-size: 21px;
    }
 }
 
@@ -68,7 +95,8 @@
       width: 90px;
    }
 
+   .langCt,
    #header > span {
-      font-size: 27px;
+      font-size: 19px;
    }
 }
