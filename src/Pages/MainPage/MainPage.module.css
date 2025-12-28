@@ -5,7 +5,6 @@
    padding-inline: 15%;
    padding-block: 10em;
    align-items: center;
-   color: var(--var-cor-texto);
 }
 
 #inicio {
@@ -23,7 +22,7 @@
    border-radius: 50%;
    width: 26px;
    height: 26px;
-   border: black solid 1px;
+   border: var(--bs-heading-color) solid 1px;
    cursor: pointer;
    transition: scale 0.3s ease;
 }
@@ -34,7 +33,7 @@
 }
 
 .cores .ativo {
-   border: black solid 3px;
+   border: var(--bs-heading-color) solid 3px;
 }
 
 #me {
@@ -75,7 +74,7 @@
 #inicio #right > h1 {
    font-size: 62px;
    font-weight: 700;
-   color: black;
+   color: var(--bs-heading-color);
    margin-block: 10px;
    text-shadow: 1px 1px 2px black;
 }
@@ -107,12 +106,12 @@
 
 .botao {
    padding: 15px 35px;
-   background-color: var(--var-cor-decoracao);
+   background-color: var(--cor-decoracao);
    font-size: 17px;
    border-radius: 10px;
    transition: all 0.35s ease;
    font-weight: 400;
-   border: 2px solid var(--var-cor-decoracao);
+   border: 2px solid var(--cor-decoracao);
    margin-top: 2em;
    color: var(--cor-hover);
    display: flex;
@@ -123,7 +122,7 @@
 
 .botao:hover {
    background-color: var(--cor-hover);
-   color: var(--var-cor-decoracao);
+   color: var(--cor-decoracao);
 }
 
 .botao > svg {
@@ -160,7 +159,7 @@
    left: 0;
    width: 8px;
    height: 8px;
-   background: var(--var-cor-decoracao);
+   background: var(--cor-decoracao);
 }
 
 #sobre > #left {
@@ -239,7 +238,7 @@
 
 #sobre #secaoXP > div > .cardXP #leftCard {
    margin-right: 18px;
-   color: var(--var-cor-decoracao);
+   color: var(--cor-decoracao);
    font-size: 26px;
 }
 
@@ -253,7 +252,7 @@
 
 #sobre #secaoXP > div > .cardXP #rightCard span {
    font-size: 13px;
-   color: var(--var-cor-texto);
+   color: var(--cor-texto);
 }
 
 #sobre #secaoXP > div > .cardXP #rightCard h5 {
@@ -264,7 +263,7 @@
 }
 
 #sobre #secaoXP > div > .cardXP #rightCard p {
-   color: var(--var-cor-texto);
+   color: var(--cor-texto);
 }
 
 #sobre #right .duasCol > img {
@@ -287,7 +286,7 @@
 }
 
 #sobre #right .duasCol > div > a {
-   color: var(--var-cor-texto);
+   color: var(--cor-texto);
    display: flex;
    border: 2px solid var(--cor-borda);
    background-color: var(--fundo-box);
@@ -299,8 +298,12 @@
 }
 
 #sobre #right .duasCol > div > a:hover {
-   background-color: var(--var-cor-decoracao);
-   border-color: var(--var-cor-decoracao);
+   background-color: var(--cor-decoracao);
+   border-color: var(--cor-decoracao);
+}
+
+[tema="dark"] #sobre #right .duasCol > div > a:hover {
+   color: black;
 }
 
 #sobre #right .duasCol > div > a > span {
@@ -336,6 +339,10 @@
    border: black 1px solid;
 }
 
+[tema="dark"] #skillLine > div {
+   background-color: black;
+}
+
 .skillVisto #skillLine {
    animation: entrar 3s ease;
 }
@@ -345,6 +352,10 @@
    position: relative;
    text-align: end;
    line-height: 7px;
+}
+
+[tema="dark"] #skillLine > div > div {
+   background-color: #522b9d;
 }
 
 @keyframes entrar {
@@ -415,7 +426,7 @@
    left: 0;
    width: 60px;
    height: 6px;
-   background-color: var(--var-cor-decoracao);
+   background-color: var(--cor-decoracao);
 }
 
 #portfolioBtnCt {
@@ -476,7 +487,7 @@
 
 #contacto #iconsCont > div > #left {
    font-size: 2em;
-   color: var(--var-cor-decoracao);
+   color: var(--cor-decoracao);
    margin-right: 3%;
 }
 
@@ -491,7 +502,7 @@
 #contacto #iconsCont > div > #right > p {
    margin-block: 6px;
    font-size: 16px;
-   color: var(--var-cor-texto);
+   color: var(--cor-texto);
 }
 
 #contacto #iconsCont > div > #right > h5 {
@@ -501,7 +512,10 @@
 
 #contacto #iconsCont > div > #right > span {
    font-weight: 600;
-   color: rgb(59, 59, 59);
+}
+
+[tema="dark"] #contacto #iconsCont > div > #right > span {
+   color: var(--cor-decoracao);
 }
 
 #contacto #locationCont {
@@ -529,7 +543,7 @@
 
 #contacto > #right > p {
    font-size: 17px;
-   color: var(--var-cor-texto);
+   color: var(--cor-texto);
    margin-bottom: 10%;
 }
 
@@ -572,12 +586,12 @@
 
 #contacto > #right > form > button {
    padding: 15px 35px;
-   background-color: var(--var-cor-decoracao);
+   background-color: var(--cor-decoracao);
    font-size: 22px;
    border-radius: 10px;
    transition: all 0.35s ease;
    font-weight: 400;
-   border: 2px solid var(--var-cor-decoracao);
+   border: 2px solid var(--cor-decoracao);
    margin-top: 2%;
    color: var(--cor-hover);
 }
@@ -585,7 +599,7 @@
 #contacto > #right > form > button:hover {
    cursor: pointer;
    background-color: var(--cor-hover);
-   color: var(--var-cor-decoracao);
+   color: var(--cor-decoracao);
 }
 
 /*-----------Secao do Footer--------------------*/
@@ -603,7 +617,7 @@
    display: flex;
    width: fit-content;
    padding: 10px;
-   background-color: var(--var-cor-decoracao);
+   background-color: var(--cor-decoracao);
    transition: 0.3s ease-in-out all;
 }
 
@@ -621,7 +635,7 @@
 
 #footer > div > span {
    font-weight: var(--weight-normal);
-   color: var(--var-cor-texto);
+   color: var(--cor-texto);
    font-size: 13px;
 }
 

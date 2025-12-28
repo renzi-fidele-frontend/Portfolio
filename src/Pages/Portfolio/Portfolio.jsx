@@ -48,8 +48,6 @@ const Portfolio = () => {
          <ProjectModal />
       </div>
    );
-
-   // TODO: Carregar os vídeos no cloudinary
 };
 
 export default Portfolio;

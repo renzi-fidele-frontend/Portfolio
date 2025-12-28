@@ -14,6 +14,15 @@
    animation: in 0.1s ease-in-out;
 }
 
+[tema="dark"] .serviceBox:hover {
+   background-image: none;
+   background-color: black;
+}
+
+[tema="dark"] .serviceBox:hover {
+   color: black !important;
+}
+
 @keyframes in {
    from {
       opacity: 0.7;
@@ -36,14 +45,18 @@
 
 .iconBox {
    width: fit-content;
-   background: var(--var-cor-decoracao);
+   background: var(--cor-decoracao);
    border-radius: 10px;
    font-size: 2.8em;
    position: relative;
-   color: var(--var-cor-texto);
+   color: var(--cor-texto);
    display: flex;
    transition: transform 0.35s ease;
    padding: 0.3em;
+}
+
+[tema="dark"] .iconBox {
+   color: black;
 }
 
 .serviceBox:hover .iconBox {
@@ -82,7 +95,7 @@
 }
 
 .serviceBox .conteudo > p {
-   color: var(--var-cor-texto);
+   color: var(--cor-texto);
    font-weight: var(--weight-normal);
 }
 

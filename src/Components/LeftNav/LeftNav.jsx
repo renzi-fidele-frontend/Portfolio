@@ -1,8 +1,8 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./LeftNav.module.css";
 import { Link, NavLink } from "react-router-dom";
 import { IoHome } from "react-icons/io5";
-import { BsPersonFill, BsBriefcaseFill, BsGrid1X2Fill, BsTelephoneFill, BsGlobe, BsMoonFill, BsMoonStarsFill } from "react-icons/bs";
+import { BsPersonFill, BsBriefcaseFill, BsGrid1X2Fill, BsTelephoneFill, BsGlobe, BsMoonStarsFill } from "react-icons/bs";
 import logo from "../../Images/lg.png";
 import { NavValue } from "../../Context/NavContext";
 import { LangValue } from "../../Context/LangContext";
@@ -12,22 +12,9 @@ import { MdSunny } from "react-icons/md";
 
 const LeftNav = () => {
    const { t } = useTranslation();
-   //  Estilo de NavLink ativo
-   let activeStyle = {
-      backgroundColor: "var(--var-cor-decoracao)",
-      transition: ".5s",
-      borderRadius: "13px",
-   };
-
+   const [modoEscuro, setModoEscuro] = useState(false);
    const navRef = useRef();
-
    const lang = LangValue();
-
-   useEffect(() => {
-      console.log(lang.idioma);
-   }, [lang]);
-
-   //  Contexto da nav
    const navAtivo = NavValue();
 
    useEffect(() => {
@@ -39,6 +26,16 @@ const LeftNav = () => {
       i18n.changeLanguage(idioma);
    }
 
+   function mudarTema() {
+      if (modoEscuro) {
+         setModoEscuro(false);
+         document.documentElement.setAttribute("tema", "light");
+      } else {
+         setModoEscuro(true);
+         document.documentElement.setAttribute("tema", "dark");
+      }
+   }
+
    return (
       <div id={styles.container} ref={navRef}>
          <Link id={styles.logo} to="#inicio">
@@ -46,23 +43,23 @@ const LeftNav = () => {
          </Link>
          <div id={styles.nav}>
             <ul>
-               <NavLink style={() => (location.hash === "#inicio" ? activeStyle : undefined)} to="/#inicio">
+               <NavLink className={() => (location.hash === "#inicio" ? styles.navAtivo : "")} to="/#inicio">
                   <IoHome />
                   <p>{t("navbar.0")}</p>
                </NavLink>
-               <NavLink style={() => (location.hash === "#sobre" ? activeStyle : undefined)} to="/#sobre">
+               <NavLink className={() => (location.hash === "#sobre" ? styles.navAtivo : "")} to="/#sobre">
                   <BsPersonFill />
                   <p>{t("navbar.1")}</p>
                </NavLink>
-               <NavLink style={() => (location.hash === "#servicos" ? activeStyle : undefined)} to="/#servicos">
+               <NavLink className={() => (location.hash === "#servicos" ? styles.navAtivo : "")} to="/#servicos">
                   <BsBriefcaseFill />
                   <p>{t("navbar.2")}</p>
                </NavLink>
-               <NavLink style={() => (location.hash === "#portifolio" ? activeStyle : undefined)} to="/#portifolio">
+               <NavLink className={() => (location.hash === "#portifolio" ? styles.navAtivo : "")} to="/#portifolio">
                   <BsGrid1X2Fill />
                   <p>{t("navbar.3")}</p>
                </NavLink>
-               <NavLink style={() => (location.hash === "#contacto" ? activeStyle : undefined)} to="/#contacto">
+               <NavLink className={() => (location.hash === "#contacto" ? styles.navAtivo : "")} to="/#contacto">
                   <BsTelephoneFill />
                   <p>{t("navbar.4")}</p>
                </NavLink>
@@ -80,9 +77,8 @@ const LeftNav = () => {
                   </p>
                </div>
                {/* Mudar Tema */}
-               <div className={styles.darkLightCt}>
-                  {/* <MdSunny /> */}
-                  <BsMoonStarsFill />
+               <div className={styles.darkLightCt} onClick={mudarTema}>
+                  {modoEscuro ? <MdSunny /> : <BsMoonStarsFill />}
                </div>
             </ul>
          </div>

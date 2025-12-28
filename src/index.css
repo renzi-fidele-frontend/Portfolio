@@ -1,23 +1,43 @@
-:root {
-   --var-cor-texto: #393a3a;
-   --var-cor-decoracao: #c2e7ff;
-   --var-cor-cinza: #f3f6fc;
+[tema="light"]:root {
+   --cor-texto: #393a3a;
    --bs-heading-color: black;
    --cor-fundo0: white;
    --cor-fundo1: #f8fafd;
-   --font-normal: 17px;
-   --weight-normal: 300;
    --fundo-box: white;
+   --nav-bg: #f3f6fc;
+   --cor-borda: #e1e3e1;
+}
+
+[tema="dark"]:root {
+   --cor-texto: #d2d4d7;
+   --bs-heading-color: rgb(255, 255, 255);
+   --cor-fundo0: #020d2b;
+   --cor-fundo1: #050c1f;
+   --fundo-box: rgb(19, 5, 49);
+   --nav-bg: rgb(0, 9, 32);
+   --cor-borda: #454258;
+}
+
+:root {
+   --cor-decoracao: #c2e7ff;
    --cor-borda: #e1e3e1;
    --padding-secao: 5% 15%;
-   --swiper-theme-color: var(--var-cor-decoracao);
-   --swiper-pagination-bullet-size: 13px;
+   --cor-cinza: #f3f6fc;
    --cor-hover: #001d35;
-   --swiper-pagination-color: var(--var-cor-decoracao);
+   --swiper-theme-color: var(--cor-decoracao);
+   --swiper-pagination-bullet-size: 13px;
+   --cor-cinza: #f3f6fc;
+   --swiper-pagination-color: var(--cor-decoracao);
+   --font-normal: 17px;
+   --weight-normal: 300;
 }
 
 .ReactModal__Overlay {
-    z-index: 800 !important;
+   z-index: 800 !important;
+}
+
+[tema="dark"] .ReactModal__Overlay {
+   background-color: #161616bf !important;
 }
 
 @media screen and (max-width: 1634px) {

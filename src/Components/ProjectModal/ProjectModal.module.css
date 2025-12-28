@@ -8,6 +8,10 @@
    height: fit-content;
 }
 
+[tema="dark"] #container {
+   background-color: black !important;
+}
+
 @keyframes entrada {
    from {
       opacity: 0;

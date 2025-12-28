@@ -18,12 +18,16 @@
    text-align: start;
    left: 20px;
    right: 20px;
-   background-color: var(--var-cor-cinza);
+   background-color: var(--cor-cinza);
    border: 2px solid var(--cor-borda);
    padding: 20px;
    border-radius: 10px;
    transition: all 0.35s ease;
    opacity: 0;
+}
+
+[tema="dark"] .portifolioText {
+   background-color: black;
 }
 
 .portifolioText > a {
@@ -34,7 +38,7 @@
    justify-content: center;
    right: 15px;
    background: var(--cor-fundo0);
-   color: var(--var-cor-texto);
+   color: var(--cor-texto);
    border-radius: 50%;
 }
 
@@ -48,7 +52,7 @@
 .portifolioText > p {
    font-size: 13px;
    font-weight: var(--weight-normal);
-   color: var(--var-cor-texto);
+   color: var(--cor-texto);
 }
 
 .portifolioImg {
@@ -69,13 +73,17 @@
    display: inline-flex;
    align-items: center;
    justify-content: center;
-   background: var(--var-cor-decoracao);
-   color: var(--var-cor-texto);
+   background: var(--cor-decoracao);
+   color: var(--cor-texto);
    border-radius: 50%;
    border-color: red;
    right: 20px;
    border: none;
    font-size: 27px;
+}
+
+[tema="dark"] .portifolioImg > a {
+   color: black;
 }
 
 @media screen and (max-width: 698px) {

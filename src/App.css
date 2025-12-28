@@ -11,6 +11,10 @@
    min-height: 100vh;
 }
 
+body {
+   color: var(--cor-texto);
+}
+
 @media screen and (max-width: 1208px) {
    #App {
       grid-template-columns: 0 100%;
