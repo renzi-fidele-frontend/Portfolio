@@ -11,6 +11,14 @@
    display: none;
 }
 
+[tema="dark"] #header {
+   background-color: var(--nav-bg);
+}
+
+[tema="dark"] #header > img {
+   filter: invert(1);
+}
+
 #header > img:hover,
 #header > span {
    cursor: pointer;

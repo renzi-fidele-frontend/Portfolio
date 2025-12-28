@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./HeaderMobile.module.css";
 import logo from "../../Images/lg.png";
 import { NavValue } from "../../Context/NavContext";

@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./MainPage.module.css";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import ProjectModal from "../../Components/ProjectModal/ProjectModal";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import TestemunhoCard from "../../Components/TestemunhoCard/TestemunhoCard";
