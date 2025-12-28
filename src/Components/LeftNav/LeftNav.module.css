@@ -114,6 +114,10 @@
       padding-top: 2em;
       gap: 0.5rem;
    }
+
+   .langCt {
+      display: none !important;
+   }
 }
 
 @media screen and (max-width: 1033px) {
