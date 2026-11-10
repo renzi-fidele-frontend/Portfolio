@@ -1,11 +1,21 @@
 {
-   "navbar": ["Início", "Sobre", "Serviços", "Portifólio", "Contacto"],
+   "navbar": [
+      "Início",
+      "Sobre",
+      "Serviços",
+      "Portifólio",
+      "Contacto"
+   ],
    "sections": {
       "inicio": {
          "greet": "Olá, me chamo",
          "im": "Sou",
          "altImg": "Illustração de Renzi Fidele",
-         "typewriter": ["um desenvolvedor de front-end", "um programador", "a melhor escolha pra você"],
+         "typewriter": [
+            "um desenvolvedor de front-end",
+            "um programador",
+            "a melhor escolha pra você"
+         ],
          "bio": "Sou um desenvolvedor fullstack especializado no stack MERN, com foco no frontend utilizando React.js. Além disso, ofereço serviços de freelancing com WordPress e Elementor, seja para um projeto complexo em React.js ou um site rápido e otimizado em WordPress, eu estou aqui para entregar soluções que realmente funcionam.",
          "cta": "Baixar CV"
       },
@@ -14,8 +24,14 @@
          "h6": "Meu nome é Renzi Fidele",
          "h5": "Eu estou disponível para colaborar em projetos Web",
          "p": "Nascido em 2001, sou um desenvolvedor de front-end apaixonado por transformar ideias em realidade digital. Com uma mentalidade positiva, estou comprometido em aprimorar minhas habilidades constantemente.",
-         "projects": ["Projetos", "Completados"],
-         "clients": ["Clientes", "Satisfeitos"],
+         "projects": [
+            "Projetos",
+            "Completados"
+         ],
+         "clients": [
+            "Clientes",
+            "Satisfeitos"
+         ],
          "xp": "Experiência",
          "xpInfo": [
             "Como freelancer na Workana, ofereço serviços profissionais na área de desenvolvimento web com 1 ano de experiência principalmente em Wordpress(elementor). Trabalho com dedicação e comprometimento para atender a necessidade de cada cliente, buscando sempre a excelência no resultado final.",
@@ -26,101 +42,50 @@
          "altPic": "Foto de Renzi Fidele no formato passaporte"
       },
       "services": {
-         "tit": "Meus serviços",
-         "array": [
-            {
-               "titulo": "Criação de Landing Page",
-               "descricao": "Páginas otimizadas que convertem. Design atraente e focado em resultados."
-            },
-            {
-               "titulo": "Desenvolvimento Web",
-               "descricao": "Soluções web personalizadas para impulsionar seu negócio utilizando as melhores tecnologias do mercado."
-            },
-            {
-               "titulo": "Web design",
-               "descricao": "Designs modernos e intuitivos que cativam e envolvem seu público para garantir conversão e confiança."
-            },
-            {
-               "titulo": "Gestão de tráfego",
-               "descricao": "Aumente sua visibilidade e resultados com estratégias eficazes de marketing digital."
-            },
-            {
-               "titulo": "Copywriting",
-               "descricao": "Mensagens persuasivas que impactam seu público-alvo e impulsionam as conversões."
-            },
-            {
-               "titulo": "Edição de vídeo",
-               "descricao": "Transforme suas ideias em vídeos cativantes e profissionais com efeitos impressionantes com o Filmora."
-            }
-         ]
+         "tit": "Meus serviços"
       },
       "portfolio": {
-         "tit": "Meu Portifólio",
-         "arrayReact": [
-            { "titulo": "Musify Pro: Leitor de prévias do Spotify", "tipo": "Leitor de músicas" },
-            { "titulo": "Site para a venda de óculos Beleza", "tipo": "Catálogo de produto" },
-            { "titulo": "Blog de curiosidades fullstack com chat global", "tipo": "Blog e Messenger" },
-            { "titulo": "Site de compatilhamento de lugares do mundo", "tipo": "Aplicação Web" },
-            { "titulo": "Criptoverso: Site informativo sobre criptomedas", "tipo": "Aplicação Web" },
-            { "titulo": "Site de ginástica e rastreamento de treinamentos", "tipo": "Aplicação Web" }
-         ],
-         "arrayLP": [
-            { "titulo": "Led Truck: Empresa de propaganda e publicidade", "tipo": "Landing Page" },
-            { "titulo": "Bebida Solidária: Associação de apoio a caridades", "tipo": "Landing Page" },
-            { "titulo": "Comunidade de Saúde Integrativa para Cães", "tipo": "Landing Page" },
-            { "titulo": "A&B: Advocacia Empresarial", "tipo": "Landing Page" },
-            { "titulo": "Comunidade de Saúde Integrativa para Gatos", "tipo": "Landing Page" },
-            { "titulo": "Unity Carlessi: Construtora de imóveis", "tipo": "Landing Page" }
-         ],
-         "arrayInstitucional": [
-            { "titulo": "Antoniolli: Construtora de imóveis", "tipo": "Site institucional" },
-            { "titulo": "AMC Contruções: Construtora de imóveis", "tipo": "Site institucional" },
-            { "titulo": "Unik Benefícios: Seguradora de veículos", "tipo": "Site institucional" },
-            { "titulo": "Online Corretora de Seguros", "tipo": "Site institucional" },
-            { "titulo": "DM Turismo: Empresa de translados", "tipo": "Site institucional" },
-            { "titulo": "Kgn Construções: Construtora de imóveis", "tipo": "Site institucional" }
-         ]
+         "tit": "Meu Portifólio"
       },
       "testemunhos": {
-         "tit": "Testemunhos",
-         "array": [
-            {
-               "topico": "Professional de excelente qualidade",
-               "testemunho": "Eu considero o Renzi muito proativo e super talentoso, cuidou do meu problema num instante",
-               "profissao": "Ceo na ANOVAFASE"
-            },
-            {
-               "topico": "Professional de excelente qualidade",
-               "testemunho": "Renzi foi super prático, fez um ótimo trabalho em pouquíssimo tempo cobrou um ótimo valor",
-               "profissao": "Cliente no Workana"
-            },
-            {
-               "topico": "Professional de excelente qualidade",
-               "testemunho": "Seus serviços foram essenciais para o sucesso do meu projeto online! 💯",
-               "profissao": "Assistente financeira"
-            },
-            {
-               "topico": "Professional de excelente qualidade",
-               "testemunho": "Incrível! Contratei o Renzi como freelancer web e fiquei impressionado com seu trabalho! 🚀",
-               "profissao": "Ceo no Nosso ads"
-            }
-         ]
+         "tit": "Testemunhos"
       },
       "contato": {
          "tit": "Vamos discutir acerca do seu projecto",
          "infoCards": [
-            { "h5": "Converse comigo", "p": "Estou aqui para te ajudar" },
-            { "h5": "Encontre-me", "p": "Venha dizer Hello em meu escritório" },
-            { "h5": "Ligue pra mim", "p": "Disponível a qualquer momento" }
+            {
+               "h5": "Converse comigo",
+               "p": "Estou aqui para te ajudar"
+            },
+            {
+               "h5": "Encontre-me",
+               "p": "Venha dizer Hello em meu escritório"
+            },
+            {
+               "h5": "Ligue pra mim",
+               "p": "Disponível a qualquer momento"
+            }
          ],
          "tit2": "Alguma idéia? Eu tenho a skill.",
          "tit3": "Vamos nos unir.",
          "p": "Me conte um pouco sobre você e o que tens em mente.",
          "form": {
-            "nome": ["Nome", "Insira o teu nome"],
-            "email": ["Email", "Insira o teu email"],
-            "assunto": ["Assunto", "Assunto"],
-            "msg": ["Mensagem", "Detalhe o teu desejo aqui"],
+            "nome": [
+               "Nome",
+               "Insira o teu nome"
+            ],
+            "email": [
+               "Email",
+               "Insira o teu email"
+            ],
+            "assunto": [
+               "Assunto",
+               "Assunto"
+            ],
+            "msg": [
+               "Mensagem",
+               "Detalhe o teu desejo aqui"
+            ],
             "btn": "Enviar mensagem"
          }
       },
@@ -128,5 +93,12 @@
          "span": "Todos os direitos reservados"
       }
    },
-   "modal": { "tipo": "Tipo", "tools": "Ferramentas", "plat": "Plataforma", "repo": "Repositório", "btn": "Acessar", "link": "Url do projeto" }
+   "modal": {
+      "tipo": "Tipo",
+      "tools": "Ferramentas",
+      "plat": "Plataforma",
+      "repo": "Repositório",
+      "btn": "Acessar",
+      "link": "Url do projeto"
+   }
 }

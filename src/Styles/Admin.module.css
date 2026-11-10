@@ -1,0 +1,357 @@
+/*
+ * Estilos partilhados pelo painel do CMS (/admin).
+ * Usa os tokens de src/index.css para o modo escuro funcionar sem ajustes.
+ */
+
+.pagina {
+   min-height: 100vh;
+   background-color: var(--cor-fundo1);
+   color: var(--cor-texto);
+   font-size: var(--font-normal);
+   font-weight: var(--weight-normal);
+}
+
+/* ---------- Layout do painel ---------- */
+
+.cabecalho {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1em;
+   flex-wrap: wrap;
+   padding: 1em 2em;
+   background-color: var(--nav-bg);
+   border-bottom: 1px solid var(--cor-borda);
+   position: sticky;
+   top: 0;
+   z-index: 10;
+}
+
+.marca {
+   display: flex;
+   align-items: baseline;
+   gap: 0.6em;
+}
+
+.marca strong {
+   color: var(--bs-heading-color);
+   font-size: 1.1em;
+}
+
+.marca span {
+   opacity: 0.7;
+   font-size: 0.85em;
+}
+
+.abas {
+   display: flex;
+   gap: 0.4em;
+   flex-wrap: wrap;
+}
+
+.aba {
+   padding: 0.5em 1em;
+   border-radius: 999px;
+   color: var(--cor-texto);
+   border: 1px solid transparent;
+   transition: background-color 0.2s, border-color 0.2s;
+}
+
+.aba:hover {
+   background-color: var(--cor-fundo1);
+}
+
+.abaAtiva {
+   background-color: var(--cor-decoracao);
+   color: var(--cor-hover);
+   border-color: var(--cor-decoracao);
+}
+
+.utilizador {
+   display: flex;
+   align-items: center;
+   gap: 0.8em;
+   font-size: 0.9em;
+}
+
+.conteudo {
+   padding: 2em;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.tituloPagina {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1em;
+   flex-wrap: wrap;
+   margin-bottom: 1.5em;
+}
+
+.tituloPagina h1 {
+   color: var(--bs-heading-color);
+   font-size: 1.5em;
+   margin: 0;
+}
+
+/* ---------- Botões ---------- */
+
+.btn {
+   display: inline-flex;
+   align-items: center;
+   gap: 0.5em;
+   padding: 0.6em 1.2em;
+   border-radius: 8px;
+   border: 1px solid var(--cor-borda);
+   background-color: var(--fundo-box);
+   color: var(--cor-texto);
+   cursor: pointer;
+   font-size: 0.95em;
+   transition: filter 0.2s, opacity 0.2s;
+}
+
+.btn:hover:not(:disabled) {
+   filter: brightness(0.96);
+}
+
+.btn:disabled {
+   opacity: 0.55;
+   cursor: not-allowed;
+}
+
+.btnPrincipal {
+   background-color: var(--cor-decoracao);
+   border-color: var(--cor-decoracao);
+   color: var(--cor-hover);
+   font-weight: 500;
+}
+
+.btnPerigo {
+   border-color: #e0544f;
+   color: #e0544f;
+   background-color: transparent;
+}
+
+.btnPequeno {
+   padding: 0.35em 0.7em;
+   font-size: 0.85em;
+}
+
+/* ---------- Tabela / lista ---------- */
+
+.tabelaCt {
+   background-color: var(--fundo-box);
+   border: 1px solid var(--cor-borda);
+   border-radius: 12px;
+   overflow-x: auto;
+}
+
+.tabela {
+   width: 100%;
+   border-collapse: collapse;
+   font-size: 0.92em;
+}
+
+.tabela th,
+.tabela td {
+   text-align: left;
+   padding: 0.85em 1em;
+   border-bottom: 1px solid var(--cor-borda);
+   vertical-align: middle;
+}
+
+.tabela th {
+   color: var(--bs-heading-color);
+   font-weight: 500;
+   white-space: nowrap;
+   background-color: var(--nav-bg);
+}
+
+.tabela tr:last-child td {
+   border-bottom: none;
+}
+
+.miniatura {
+   width: 68px;
+   height: 44px;
+   object-fit: cover;
+   border-radius: 6px;
+   border: 1px solid var(--cor-borda);
+   background-color: var(--cor-fundo1);
+}
+
+.acoes {
+   display: flex;
+   gap: 0.4em;
+   flex-wrap: wrap;
+}
+
+.etiqueta {
+   display: inline-block;
+   padding: 0.2em 0.65em;
+   border-radius: 999px;
+   font-size: 0.8em;
+   border: 1px solid var(--cor-borda);
+   white-space: nowrap;
+}
+
+.etiquetaOculto {
+   opacity: 0.6;
+}
+
+/* ---------- Formulários ---------- */
+
+.formulario {
+   background-color: var(--fundo-box);
+   border: 1px solid var(--cor-borda);
+   border-radius: 12px;
+   padding: 1.8em;
+   display: grid;
+   gap: 1.3em;
+}
+
+.grelhaDupla {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+   gap: 1.3em;
+}
+
+.campo {
+   display: grid;
+   gap: 0.4em;
+}
+
+.campo > label,
+.rotulo {
+   font-size: 0.85em;
+   color: var(--bs-heading-color);
+   font-weight: 500;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo input[type="password"],
+.campo input[type="number"],
+.campo input[type="url"],
+.campo select,
+.campo textarea {
+   width: 100%;
+   padding: 0.7em 0.9em;
+   border-radius: 8px;
+   border: 1px solid var(--cor-borda);
+   background-color: var(--cor-fundo0);
+   color: var(--cor-texto);
+   font-family: inherit;
+   font-size: 0.95em;
+}
+
+.campo textarea {
+   resize: vertical;
+   min-height: 90px;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+   outline: 2px solid var(--cor-decoracao);
+   outline-offset: 1px;
+}
+
+.ajuda {
+   font-size: 0.8em;
+   opacity: 0.7;
+}
+
+.caixaDeVerificacao {
+   display: flex;
+   align-items: center;
+   gap: 0.6em;
+   font-size: 0.9em;
+}
+
+.caixaDeVerificacao input {
+   width: 18px;
+   height: 18px;
+   accent-color: var(--cor-decoracao);
+}
+
+.rodapeFormulario {
+   display: flex;
+   gap: 0.7em;
+   flex-wrap: wrap;
+   padding-top: 0.5em;
+   border-top: 1px solid var(--cor-borda);
+}
+
+/* ---------- Mensagens ---------- */
+
+.aviso,
+.erro,
+.sucesso {
+   padding: 0.8em 1.1em;
+   border-radius: 8px;
+   font-size: 0.9em;
+   border: 1px solid var(--cor-borda);
+}
+
+.erro {
+   border-color: #e0544f;
+   color: #e0544f;
+}
+
+.sucesso {
+   border-color: #3f9e5a;
+   color: #3f9e5a;
+}
+
+.listaErros {
+   margin: 0.5em 0 0;
+   padding-left: 1.2em;
+}
+
+.vazio {
+   padding: 3em 1em;
+   text-align: center;
+   opacity: 0.7;
+}
+
+/* ---------- Login ---------- */
+
+.loginCt {
+   min-height: 100vh;
+   display: grid;
+   place-items: center;
+   padding: 2em 1em;
+   background-color: var(--cor-fundo1);
+}
+
+.loginCaixa {
+   width: 100%;
+   max-width: 380px;
+   background-color: var(--fundo-box);
+   border: 1px solid var(--cor-borda);
+   border-radius: 14px;
+   padding: 2em;
+   display: grid;
+   gap: 1.1em;
+}
+
+.loginCaixa h1 {
+   margin: 0;
+   font-size: 1.3em;
+   color: var(--bs-heading-color);
+}
+
+.loginCaixa p {
+   margin: 0;
+   font-size: 0.88em;
+   opacity: 0.75;
+}
+
+@media screen and (max-width: 720px) {
+   .conteudo,
+   .cabecalho {
+      padding: 1.2em 1em;
+   }
+}

@@ -26,7 +26,10 @@ const ProjectCard = ({
             </a>
          </div>
          <div
-            style={{ backgroundPosition: thumbnailCentralizado ? "center center" : "initial", backgroundImage: `url(${imagemThumbnail})` }}
+            style={{
+               backgroundPosition: thumbnailCentralizado ? "center center" : "initial",
+               backgroundImage: imagemThumbnail ? `url(${imagemThumbnail})` : "none",
+            }}
             className={styles.portifolioImg}
          >
             <Link

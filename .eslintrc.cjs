@@ -11,5 +11,7 @@ module.exports = {
   plugins: ['react-refresh'],
   rules: {
     'react-refresh/only-export-components': 'warn',
+    // O projecto valida props por convencao, nao com a biblioteca prop-types
+    'react/prop-types': 'off',
   },
 }

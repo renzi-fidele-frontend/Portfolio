@@ -1,0 +1,29 @@
+.aviso {
+   position: fixed;
+   bottom: 1em;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 900;
+   display: flex;
+   align-items: center;
+   gap: 1em;
+   padding: 0.7em 1.2em;
+   border-radius: 999px;
+   background-color: var(--fundo-box);
+   color: var(--cor-texto);
+   border: 1px solid var(--cor-borda);
+   box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+   font-size: 0.85em;
+   max-width: calc(100% - 2em);
+}
+
+.aviso button {
+   padding: 0.35em 0.9em;
+   border-radius: 999px;
+   border: 1px solid var(--cor-decoracao);
+   background-color: var(--cor-decoracao);
+   color: var(--cor-hover);
+   cursor: pointer;
+   font-size: inherit;
+   white-space: nowrap;
+}
