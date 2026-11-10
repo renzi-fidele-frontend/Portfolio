@@ -115,6 +115,15 @@ Cloudinary), `src/models` (os sub-documentos partilhados `textoBilingue` e
 (`semear.js` + `conteudoInicial.js`, que é a cópia do conteúdo que antes estava em
 `useData.jsx`, e `criarAdmin.js`).
 
+**Dois modos de execução**: `src/index.js` (liga à BD e depois `app.listen`) é o
+arranque local e de um servidor normal; em serverless (Vercel, Root Directory
+`server/`) o entry detectado é `src/app.js` e **não há arranque**, por isso a ligação
+é feita no primeiro pedido pelo middleware `exigirBd` (`routes/index.js` aplica-o a
+tudo menos `/saude` e `/meta`) e fica em cache em `globalThis` (`config/bd.js`).
+`bufferCommands` está desligado de propósito: sem isso uma falha de ligação aparecia
+como `buffering timed out after 10000ms` em vez do motivo real. `GET /api/saude`
+responde mesmo com a BD em baixo e devolve `erroBd`.
+
 Acrescentar uma colecção nova = modelo em `src/models` + uma linha
 `rotas.use("/x", criarRotasRecurso(X, { camposImagem: [...] }))` em `routes/index.js`.
 Acrescentar uma chave de ícone = entrada em `ICONES_SERVICO` (backend) **e** em `ICONES`
