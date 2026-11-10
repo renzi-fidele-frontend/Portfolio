@@ -29,11 +29,17 @@ VITE_API_URL=http://localhost:4000/api
 | `npm run criar-admin` | cria o admin, ou actualiza a senha se já existir |
 | `npm run semear` | importa `src/scripts/conteudoInicial.js` para o MongoDB |
 | `npm run semear -- --limpar` | apaga as três colecções antes de importar |
-| `npm run semear -- --sem-imagens` | importa só os textos, sem Cloudinary |
+| `npm run semear -- --sem-imagens` | importa só os textos; **não escreve os campos de imagem** |
 
 O seed é idempotente: identifica projetos por `url` + `categoria`, serviços por
 `titulo.pt` e testemunhos por `nomeCliente`, por isso correr duas vezes actualiza
 em vez de duplicar.
+
+> `--sem-imagens` **omite** `imagemThumbnail`, `imagemDestaque` e `fotoCliente` do
+> update, em vez de os limpar — os valores que já estiverem na base de dados ficam
+> como estão. Se um seed anterior correu com esta flag, os projetos ficam com as
+> imagens em `""` e é preciso correr `npm run semear` sem a flag para as gravar.
+> No fim, o script conta quantos projetos ficaram sem thumbnail e avisa.
 
 ## Modelo de dados
 

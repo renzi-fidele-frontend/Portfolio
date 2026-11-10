@@ -27,7 +27,7 @@ const projetoSchema = new mongoose.Schema(
       ordem: { type: Number, default: 0, index: true },
       publicado: { type: Boolean, default: true, index: true },
    },
-   { timestamps: true, versionKey: false }
+   { timestamps: true, versionKey: false },
 );
 
 projetoSchema.index({ categoria: 1, ordem: 1 });

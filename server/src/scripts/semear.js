@@ -42,7 +42,12 @@ async function enviarImagemLocal(caminhoRelativo) {
    return imagem;
 }
 
-/** Troca os caminhos locais de `imagemLocal` pelos objectos { url, publicId }. */
+/**
+ * Troca os caminhos locais de `imagemLocal` pelos objectos { url, publicId }.
+ *
+ * Com --sem-imagens os campos de imagem sao omitidos do update, o que deixa
+ * intactos os valores que ja estao na base de dados (tipicamente vazios).
+ */
 async function resolverImagens(registo) {
    const { imagemLocal = {}, ...resto } = registo;
    if (semImagens) return resto;
@@ -62,6 +67,11 @@ async function semear() {
    }
 
    await conectarBd();
+
+   if (semImagens) {
+      console.warn("[semear] --sem-imagens activo: nenhuma imagem e enviada e os campos de imagem NAO sao escritos.");
+      console.warn("         Os projetos ficam com imagemThumbnail/imagemDestaque vazios e o site nao mostra as capas.");
+   }
 
    if (limpar) {
       await Promise.all([Projeto.deleteMany({}), Servico.deleteMany({}), Testemunho.deleteMany({})]);
@@ -111,6 +121,17 @@ async function semear() {
       testemunhos: await Testemunho.countDocuments(),
    };
    console.log("[semear] concluido:", totais);
+
+   // Verificacao final: um seed "concluido" com imagens vazias nao e um seed bom
+   const semThumbnail = await Projeto.countDocuments({ $or: [{ "imagemThumbnail.url": "" }, { "imagemThumbnail.url": { $exists: false } }] });
+   const semFoto = await Testemunho.countDocuments({ $or: [{ "fotoCliente.url": "" }, { "fotoCliente.url": { $exists: false } }] });
+
+   if (semThumbnail || semFoto) {
+      console.warn(`\n[semear] ATENCAO: ${semThumbnail} projeto(s) sem thumbnail e ${semFoto} testemunho(s) sem foto.`);
+      console.warn("         Corra 'npm run semear' sem --sem-imagens (com CLOUDINARY_* preenchido) para gravar as imagens.");
+   } else {
+      console.log("[semear] todas as thumbnails e fotos estao preenchidas");
+   }
 }
 
 semear()
