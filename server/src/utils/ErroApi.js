@@ -19,6 +19,9 @@ class ErroApi extends Error {
    static naoEncontrado(mensagem = "Recurso nao encontrado") {
       return new ErroApi(404, mensagem);
    }
+   static indisponivel(mensagem = "Servico temporariamente indisponivel") {
+      return new ErroApi(503, mensagem);
+   }
 }
 
 export default ErroApi;

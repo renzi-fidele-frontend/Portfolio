@@ -89,10 +89,48 @@ O upload vai em memória (multer) directo para o Cloudinary — nada é escrito 
 do servidor. Quando um documento é apagado, ou quando uma imagem é substituída, o
 `publicId` antigo é removido do Cloudinary.
 
-## Notas de deploy
+## Deploy
 
-- O frontend e a API são deploys separados (ex.: site na Vercel, API no Render).
-- `ORIGENS_PERMITIDAS` tem de incluir o domínio final do site, senão o CORS bloqueia.
+A API corre em dois modos sem alterações no código:
+
+- **servidor normal** (`npm start`, ex.: Render) — `src/index.js` liga à base de dados
+  e só depois abre a porta;
+- **serverless** (Vercel) — não há arranque, por isso o entry é `src/app.js` (o
+  `export default app`) e a ligação é feita **no primeiro pedido** pelo middleware
+  `exigirBd`, ficando em cache (`globalThis`) para as invocações seguintes da mesma
+  instância.
+
+> Sem esse middleware, em serverless o Express responde mas o Mongoose nunca liga: as
+> queries ficam em buffer e devolvem `Operation \`projetos.find()\` buffering timed out
+> after 10000ms`. `bufferCommands` está desligado, logo um problema de ligação aparece
+> com o motivo real (host, IP não autorizado, credenciais) num **503**, e não como timeout.
+
+### Vercel
+
+Project com **Root Directory = `server/`**. Não é preciso `vercel.json`: a Vercel
+encontra o Express sozinha (procura `app`, `index` ou `server` na raiz ou em `src/`).
+
+Variáveis de ambiente a definir no painel da Vercel (o `.env` local não é enviado):
+`MONGODB_URI`, `JWT_SECRET`, `JWT_EXPIRA_EM`, `ORIGENS_PERMITIDAS`,
+`CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, `CLOUDINARY_API_SECRET`, `CLOUDINARY_PASTA`.
+
+A base de dados tem de ser acessível pela internet — um MongoDB local (`mongodb://127.0.0.1`)
+nunca funciona a partir da Vercel. Com o MongoDB Atlas:
+
+1. `MONGODB_URI=mongodb+srv://utilizador:senha@cluster.xxxx.mongodb.net/portifolio?retryWrites=true&w=majority`
+   — o nome da base (`/portifolio`) tem de estar no url, senão o Mongoose usa `test`;
+2. em **Network Access**, permitir `0.0.0.0/0` (os IPs das funções serverless são dinâmicos);
+3. povoar o Atlas: apontar temporariamente o `MONGODB_URI` de `server/.env` para o Atlas e
+   correr `npm run criar-admin` e `npm run semear`.
+
+`GET /api/saude` é o diagnóstico: responde sempre, diz se a base está `ligada` e, quando não
+está, inclui `erroBd` com o motivo.
+
+### Resto
+
+- O frontend e a API são deploys separados; `VITE_API_URL` no deploy do site tem de apontar
+  para `https://<api>.vercel.app/api`.
+- `ORIGENS_PERMITIDAS` tem de incluir o domínio final do site, senão o CORS bloqueia (403).
 - `JWT_SECRET` em produção tem de ser diferente do de desenvolvimento.
 - O token do painel é guardado em `localStorage`, o que é suficiente para um painel
   de um só utilizador mas é vulnerável a XSS; se isso passar a importar, trocar
