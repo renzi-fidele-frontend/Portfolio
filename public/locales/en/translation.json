@@ -1,11 +1,21 @@
 {
-   "navbar": ["Home", "About", "Services", "Portfolio", "Contact"],
+   "navbar": [
+      "Home",
+      "About",
+      "Services",
+      "Portfolio",
+      "Contact"
+   ],
    "sections": {
       "inicio": {
          "greet": "Hello, my name is",
          "im": "I'm",
          "altImg": "Illustration of Renzi Fidele",
-         "typewriter": ["a front-end developer", "a programmer", "the best choice for you"],
+         "typewriter": [
+            "a front-end developer",
+            "a programmer",
+            "the best choice for you"
+         ],
          "bio": "I'm a fullstack developer specializing in the MERN stack, focusing on the frontend using React.js. Additionally, I offer freelancing services with WordPress and Elementor, whether it's a complex React.js project or a fast, optimized WordPress website, I'm here to deliver solutions that really work.",
          "cta": "Download CV"
       },
@@ -14,8 +24,14 @@
          "h6": "My name is Renzi Fidele",
          "h5": "I am available to collaborate on web projects",
          "p": "Born in 2001, I am a front-end developer passionate about transforming ideas into digital reality. With a positive mindset, I am committed to constantly improving my skills.",
-         "projects": ["Projects", "Completed"],
-         "clients": ["Satisfied", "Customers"],
+         "projects": [
+            "Projects",
+            "Completed"
+         ],
+         "clients": [
+            "Satisfied",
+            "Customers"
+         ],
          "xp": "Experiência",
          "xpInfo": [
             "As a freelancer at Workana, I offer professional services in the area of ​​web development with 1 year of experience mainly in Wordpress (Elementor). I work with dedication and commitment to meet the needs of each client, always seeking excellence in the final result.",
@@ -26,101 +42,50 @@
          "altPic": "Photo of Renzi Fidele in passport format"
       },
       "services": {
-         "tit": "My services",
-         "array": [
-            {
-               "titulo": "Landing Page development",
-               "descricao": "Optimized pages that convert. Attractive, results-focused design."
-            },
-            {
-               "titulo": "Web development",
-               "descricao": "Customized web solutions to boost your business using the best technologies on the market."
-            },
-            {
-               "titulo": "Web design",
-               "descricao": "Modern, intuitive designs that captivate and engage your audience to ensure conversion and trust."
-            },
-            {
-               "titulo": "Digital marketing",
-               "descricao": "Increase your visibility and results with effective digital marketing strategies."
-            },
-            {
-               "titulo": "Copywriting",
-               "descricao": "Persuasive messages that impact your target audience and drive conversions."
-            },
-            {
-               "titulo": "Video editing",
-               "descricao": "Turn your ideas into captivating, professional videos with stunning effects with Filmora."
-            }
-         ]
+         "tit": "My services"
       },
       "portfolio": {
-         "tit": "My Portfolio",
-         "arrayReact": [
-            { "titulo": "Musify Pro: Spotify Preview Songs Player", "tipo": "Music Player App" },
-            { "titulo": "Website for selling Beleza glasses", "tipo": "Product Catalog" },
-            { "titulo": "Fullstack curiosities blog with global chat", "tipo": "Blog and Chat App" },
-            { "titulo": "Fullstack places sharing website", "tipo": "Web App" },
-            { "titulo": "Cryptoverso: Informative website about cryptocurrencies", "tipo": "Web App" },
-            { "titulo": "Fitness and training tracking website", "tipo": "Web App" }
-         ],
-         "arrayLP": [
-            { "titulo": "Led Truck: Advertising and publicity company", "tipo": "Landing Page" },
-            { "titulo": "Integrative Health Community for Dogs", "tipo": "Landing Page" },
-            { "titulo": "Unity Carlessi: Real estate construction company", "tipo": "Landing Page" },
-            { "titulo": "A&B: Advocacia Empresarial", "tipo": "Landing Page" },
-            { "titulo": "Cryptoverso: Informative website about cryptocurrencies", "tipo": "Web App" },
-            { "titulo": "Institutional website for the AMC Builder", "tipo": "Institutional website" }
-         ],
-         "arrayInstitucional": [
-            { "titulo": "Antoniolli", "tipo": "Web App" },
-            { "titulo": "Website for selling Beleza glasses", "tipo": "Ecommerce" },
-            { "titulo": "Fullstack curiosities blog with global chat", "tipo": "Blog and Chat App" },
-            { "titulo": "Fullstack places sharing website", "tipo": "Web App" },
-            { "titulo": "Cryptoverso: Informative website about cryptocurrencies", "tipo": "Web App" },
-            { "titulo": "Institutional website for the AMC Builder", "tipo": "Institutional website" }
-         ]
+         "tit": "My Portfolio"
       },
       "testemunhos": {
-         "tit": "Testimonials",
-         "array": [
-            {
-               "topico": "Excellent quality professional",
-               "testemunho": "I consider Renzi to be very proactive and super talented, he took care of my problem in no time",
-               "profissao": "Ceo at ANOVAFASE"
-            },
-            {
-               "topico": "Excellent quality professional",
-               "testemunho": "Renzi was super practical, did a great job in a very short time and charged a great price",
-               "profissao": "Client at Workana"
-            },
-            {
-               "topico": "Excellent quality professional",
-               "testemunho": "His services were essential to the success of my online project! 💯",
-               "profissao": "Financial assistant"
-            },
-            {
-               "topico": "Excellent quality professional",
-               "testemunho": "Incredible! I hired Renzi as a web freelancer and was impressed with his work! 🚀",
-               "profissao": "Ceo at Nosso ads"
-            }
-         ]
+         "tit": "Testimonials"
       },
       "contato": {
          "tit": "Let's discuss about your project",
          "infoCards": [
-            { "h5": "Talk to me", "p": "I'm here to help you" },
-            { "h5": "Find me", "p": "Come say hello in my office" },
-            { "h5": "Call me", "p": "Available at any time" }
+            {
+               "h5": "Talk to me",
+               "p": "I'm here to help you"
+            },
+            {
+               "h5": "Find me",
+               "p": "Come say hello in my office"
+            },
+            {
+               "h5": "Call me",
+               "p": "Available at any time"
+            }
          ],
          "tit2": "Any ideas? I have the skill.",
          "tit3": "Let's unite.",
          "p": "Tell me a little about yourself and what you have in mind.",
          "form": {
-            "nome": ["Name", "Insert your name"],
-            "email": ["Email", "Insert your email"],
-            "assunto": ["Subject", "Subject"],
-            "msg": ["Message", "Detail your wish here"],
+            "nome": [
+               "Name",
+               "Insert your name"
+            ],
+            "email": [
+               "Email",
+               "Insert your email"
+            ],
+            "assunto": [
+               "Subject",
+               "Subject"
+            ],
+            "msg": [
+               "Message",
+               "Detail your wish here"
+            ],
             "btn": "Send message"
          }
       },
@@ -128,5 +93,12 @@
          "span": "All rights reserved"
       }
    },
-   "modal": { "tipo": "Type", "tools": "Tools", "plat": "Host service", "repo": "Repository", "btn": "Access", "link": "Live preview" }
+   "modal": {
+      "tipo": "Type",
+      "tools": "Tools",
+      "plat": "Host service",
+      "repo": "Repository",
+      "btn": "Access",
+      "link": "Live preview"
+   }
 }

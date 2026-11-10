@@ -55,7 +55,7 @@ const ProjectModal = () => {
 
                      <div>
                         <h6>{t("modal.tools")}:</h6>
-                        <p>{loc.state.linguagens}</p>
+                        <p>{Array.isArray(loc.state.linguagens) ? loc.state.linguagens.join(", ") : loc.state.linguagens}</p>
                      </div>
 
                      <div>
